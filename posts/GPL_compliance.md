@@ -46,14 +46,14 @@ Side note, LGPLv3 incorporates the full GPLv3 license and is therefore equivalen
 > "An “aggregate” consists of a number of separate programs, distributed together on the same CD-ROM or other media.
        The GPL permits you to create and distribute an aggregate, even when the licenses of the other software are nonfree or GPL-incompatible.
        The only condition is that you cannot release the aggregate under a license that prohibits users from exercising rights that each program's individual license would grant them.
-
->    Where's the line between two separate programs, and one program with two parts?
+>
+>   Where's the line between two separate programs, and one program with two parts?
        This is a legal question, which ultimately judges will decide.
        We believe that a proper criterion depends both on the mechanism of communication (exec, pipes, rpc, function calls within a shared address space, etc.)
        and the semantics of the communication (what kinds of information are interchanged).
        If the modules are included in the same executable file, they are definitely combined in one program. If modules are designed to run linked together in a shared address space, that almost surely means combining them into one program.
-
->   By contrast, pipes, sockets and command-line arguments are communication mechanisms normally used between two separate programs.
+>
+> By contrast, pipes, sockets and command-line arguments are communication mechanisms normally used between two separate programs.
        So when they are used for communication, the modules normally are separate programs.
        But if the semantics of the communication are intimate enough, exchanging complex internal data structures,
        that too could be a basis to consider the two parts as combined into a larger program."
@@ -65,10 +65,10 @@ Side note, LGPLv3 incorporates the full GPLv3 license and is therefore equivalen
 [6] - https://www.gnu.org/licenses/gpl-faq.html#InstInfo
 
 >   Specifically;
-
+>
 > LGPLv2.1: "an executable [..] must include any data and utility programs needed for reproducing the executable from it"
                      - https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
-                     
+>                     
 >  GPLv3: "The “Corresponding Source” for a work in object code form means all the source code needed to generate, install,
                      and (for an executable work) run the object code and to modify the work, including scripts to control those activities."
                      - https://www.gnu.org/licenses/gpl-3.0.html
@@ -136,7 +136,7 @@ Statically linking can easier be seen as "based on the library" and it could the
 
 >  "(1) If you statically link against an LGPLed library, you must also provide your application in an object (not necessarily source) format,
               so that a user has the opportunity to modify the library and relink the application.
-              
+>              
 >  (2) If you dynamically link against an LGPLed library already present on the user's computer, you need not convey the library's source.
               On the other hand, if you yourself convey the executable LGPLed library along with your application, whether linked with statically or dynamically,
               you must also convey the library's sources, in one of the ways for which the LGPL provides."
