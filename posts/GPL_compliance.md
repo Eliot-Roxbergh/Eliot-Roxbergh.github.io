@@ -1,8 +1,7 @@
 
 # GPL Compliance
 
-
-### Table of Contents
+__Table of Contents__
 1. [GPL Main Points](#gpl-main-points)
 2. [(L)GPLv2 vs (L)GPLv3](#lgplv2-vs-lgplv3)
 3. [How is LGPL Weaker than GPL?](#how-is-lgpl-weaker-than-gpl)
@@ -202,5 +201,3 @@ For instance, GPLv3 and Apache 2.0 are compatible, and together a combined work 
 [6] - https://opensource.stackexchange.com/questions/33/how-can-a-project-be-relicensed/46#46
 
 [7] - https://www.gnu.org/licenses/license-compatibility.html
-
-_© 2021 Eliot Roxbergh All Rights Reserved_
