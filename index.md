@@ -1,8 +1,3 @@
-<!---
----
-{% include_relative posts/about.md %}
--->
-
 ---
 {% include_relative posts/GPL_compliance.md %}
 
