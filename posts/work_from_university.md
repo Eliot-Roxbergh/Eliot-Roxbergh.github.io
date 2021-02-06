@@ -2,9 +2,9 @@
 
 ### Theses
 
-[Master's Thesis](https://github.com/Erlang-Enclave-Thesis/sgx-erlang-extension) _(2020)_
+[__Master's Thesis:__ Protecting Confidential Erlang Workloads with Intel SGX](https://github.com/Erlang-Enclave-Thesis/sgx-erlang-extension) _(2020)_
 
-[Bachelor's Thesis](https://github.com/GustaMagik/RSA_Security_Token) _(2017)_
+[__Bachelor's Thesis:__ Open Source Security Token for Linux](https://github.com/GustaMagik/RSA_Security_Token) _(2017)_
 
 ### Articles
 
