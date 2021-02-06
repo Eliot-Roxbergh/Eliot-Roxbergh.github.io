@@ -13,7 +13,6 @@ I am not a lawyer. Additionally, much is still up for debate and depends on juri
 _Eliot Roxbergh 2021-01-27_
 
 
-----
 
 [1] - https://copyleft.org/guide/
 
@@ -36,7 +35,7 @@ Comment, in the case that the work is only conveyed in source code, and not in a
 
 Side note, LGPLv3 incorporates the full GPLv3 license and is therefore equivalent in many areas.
 
-----
+
 
 [1] - https://www.gnu.org/licenses/gpl-faq.html#NFUseGPLPlugins
 
@@ -97,7 +96,7 @@ As a result of this, as I understand, the Apache license is incompatible with GP
 
 Read more here [5, 7].
 
-----
+
 
 [1] - https://www.qt.io/licensing/open-source-lgpl-obligations
 
@@ -130,7 +129,6 @@ On the other hand, if you statically link you need to provide information to ena
 this might for instance be the object files of your work. [2]
 Statically linking can easier be seen as "based on the library" and it could therefore be safer to dynamically link when possible (or relicense under LGPL) [3].
 
-----
 
 [1] - https://copyleft.org/guide/comprehensive-gpl-guidech11.html
 
@@ -185,7 +183,6 @@ Second, when multiple compatible projects are merged together, all licenses stil
 However, if you wish, the combined program can be _seen_ as licensed under the most stringent license present - assuming they are compatible.
 For instance, GPLv3 and Apache 2.0 are compatible, and together a combined work under these licenses could be seen as the strong copyleft GPLv3 [7].
 
-----
 
 [1] - https://tldrlegal.com/license/gnu-lesser-general-public-license-v2.1-(lgpl-2.1)
 
