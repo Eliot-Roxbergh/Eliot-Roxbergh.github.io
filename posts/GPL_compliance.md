@@ -1,7 +1,6 @@
 
 # GPL Compliance
 
-__Table of Contents__
 1. [GPL Main Points](#gpl-main-points)
 2. [(L)GPLv2 vs (L)GPLv3](#lgplv2-vs-lgplv3)
 3. [How is LGPL Weaker than GPL?](#how-is-lgpl-weaker-than-gpl)
