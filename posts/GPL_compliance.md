@@ -18,9 +18,9 @@ _Eliot Roxbergh 2021-01-27_
 
 ## GPL Main Points
 
-It is not entirely clear when it is allowed for a proprietary (or otherwise licensed) work to depend on a GPL work, but the following paragraph shows what the GNU foundation themselves argue to be the case. Some argue that you can go further, and still not be contaminated (i.e. without being forced to release your work under the GPL or risk getting sued), such as to dynamically link against a GPL program. This is mentioned later in section on GPL linking.
+In the following paragraph I try to summarize how the GNU Foundation themselves interpret the GPL license. However, as I mention later in the section GPL Linking, some argue that you can go further - e.g. to dynamically link against a GPL program - and still not be contamined (i.e. without being forced to release your work under the GPL or risk getting sued).
 
-So to be sure your work is not contaminated by GPL, the following should apply;
+So to be sure that your work is not contaminated by the GPL, the following should apply;
 The work should be an aggregate (as per GPL license), meaning that it is separate and independent from the GPL licensed program. Therefore, the work should be able to function on its own, and any GPL components easily exchanged.
 For instance, it is allowed to use a GPL-covered plug-in as long as it DOES NOT form a single combined program with the work. So, you are allowed to use fork and exec to run the external GPL binary. [1]
 The term used is that both works should communicate "at arms length" [2]. At a minimum, the programs should run as separate processes and communicate over an IPC mechanism like pipes. They cannot directly share any data structures. [3]
@@ -89,8 +89,8 @@ https://opensource.stackexchange.com/questions/5447/to-which-extent-gpl-license-
 
 GPLv3 and LGPLv3 are generally stricter than GPLv2 and LGPLv2.1 respectively.
 
-1. The tivoization clause states that if you distribute user products (i.e. actual hardware products), you need to allow modification of the work covered under GPLv3 on these devices [1,2].
-2. Unlike their predecessors (L)GPLv3 provide an explicit clause, that work distributed in a non-source format need to include installation instructions together with the source code. This is assumably stronger than LGPLv2.1 and GPLv2 which had a similar but much shorter mention of this. Although I am not sure what this means in practice.
+1. The tivoization clause states that if you distribute user products (i.e. actual hardware products), you need to allow modification of the work covered under (L)GPLv3 on these devices [1,2].
+2. Unlike their predecessors, (L)GPLv3 provides an explicit clause that work distributed in a non-source format need to include installation instructions together with the source code. This is assumably stronger than LGPLv2.1 and GPLv2 which had a similar but much shorter mention of this. Although I am not sure what this means in practice.
 3. Similar with patents - (L)GPLv3 provide an explicit patent clause [4], also described at [1,4,5]. While GPLv2 and LGPLv2.1 only provide an "implicit patent license" [5].
 As a result of this, as I understand, the Apache license is incompatible with GPLv2, but is compatible with GPLv3 [6].
 
@@ -123,9 +123,9 @@ Read more here [5, 7].
 Your work gets contaminated by LGPL if it is "based on the library", e.g. if your work directly includes LGPL code or if your work cannot function without the LGPL parts (either by its own or by replacing the LGPL work).
 However, the LGPL is referred to as weak copyleft since much can be accomplished while "combined" with non-copyleft code which then falls under "works that use the library". [1]
 
-In this later case, your work is not contaminated even if you link against an LGPL licensed library, provided the following;
+In this later case, your work is not contaminated even if you link against an LGPL licensed library, the following applies;
 You may dynamically link against LGPL licensed libraries without disclosing your work, although if you provide the LGPL library (dynamically linked) you also need to provide its source.
-On the other hand, if you statically link you need to provide information to enable user to relink the software,
+On the other hand, if you statically link you need to provide information to enable users to relink the software,
 this might for instance be the object files of your work. [2]
 Statically linking can easier be seen as "based on the library" and it could therefore be safer to dynamically link when possible (or relicense under LGPL) [3].
 
