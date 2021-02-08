@@ -4,7 +4,7 @@
 1. [GPL Main Points](#gpl-main-points)
 2. [(L)GPLv2 vs (L)GPLv3](#lgplv2-vs-lgplv3)
 3. [How is LGPL Weaker than GPL?](#how-is-lgpl-weaker-than-gpl)
-4. [Static vs Dynamic Linking is there a Legal Difference for GPL?](#static-vs-dynamic-linking-is-there-a-legal-difference-for-gpl)
+4. [Static vs Dynamic Linking (GPL)](#static-vs-dynamic-linking-gpl)
 5. [What is License Compatibility?](#what-is-license-compatibility)
 
 In this post I have summarized some important things to keep in mind when using GPL, but I do recommend reading the relevant licenses - also explained in detail here [1]. The focus is on GPLv3, but GPLv2, LGPLv2.1, and LGPLv3 are also discussed.
@@ -145,9 +145,9 @@ Statically linking can easier be seen as "based on the library" and it could the
 
 
 
-## Static vs Dynamic Linking is there a Legal Difference for GPL?
+## Static vs Dynamic Linking (GPL)
 
-To avoid contamination, dynamic linking is generally safer from a legal perspective.
+To avoid contamination, dynamic linking is generally safer (than static linking) from a legal perspective.
 
 FSF describes that it is not in any way allowed for a proprietary program to directly link to a program licensed under GPL [1] (as described earlier they need to communicate "at arms length").
 However, it has been claimed that (in some jurisdictions) it is acceptable to dynamically link to GPL code assuming that the proprietary work is separate from the GPL work and does not depend on it.
