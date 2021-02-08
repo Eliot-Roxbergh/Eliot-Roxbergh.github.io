@@ -145,58 +145,55 @@ Statically linking can easier be seen as "based on the library" and it could the
 
 
 
-## More Questions
+# More Questions
 
-### Static vs Dynamic Linking is there a Legal Difference for GPL?
+## Static vs Dynamic Linking is there a Legal Difference for GPL?
 
 To avoid contamination, dynamic linking is generally safer from a legal perspective.
 
-FSF describes that it is not in any way allowed for a proprietary program to directly link to a program licensed under GPL [2] (as described earlier they need to communicate "at arms length").
+FSF describes that it is not in any way allowed for a proprietary program to directly link to a program licensed under GPL [1] (as described earlier they need to communicate "at arms length").
 However, it has been claimed that (in some jurisdictions) it is acceptable to dynamically link to GPL code assuming that the proprietary work is separate from the GPL work and does not depend on it.
-Ergo, the proprietary work should be able to utilize components other than the GPL affected ones and still function (additionally, it should not be derivative work of the GPL project). [3]
-There seems to be no simple answer for this question, as these statements seems contradictory to what FSF writes [2], proceed with caution.
+Ergo, the proprietary work should be able to utilize components other than the GPL affected ones and still function (additionally, it should not be derivative work of the GPL project). [2]
+There seems to be no simple answer for this question, as these statements seems contradictory to what FSF writes [1], proceed with caution.
 
 This was also discussed in an LWN article, which states; _"The key point is that the build-time and run-time environments may be different [...].
  This is important because, in his opinion, dynamic linking moves questions about derivative works and the application of the GPL license into run time, because it is only at run time that libraries are linked with a program.
  The dynamically linked libraries that are used at run time could indeed be different—and have different licenses—from the libraries that were specified during the static linking phase.
- This implies that (depending who you ask) declaring the wrong dependencies in a binary could trigger license compliance issues."_ [4]
+ This implies that (depending who you ask) declaring the wrong dependencies in a binary could trigger license compliance issues."_ [3]
 
+[1] - https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL (included below)
 
-### What is License compatibility?
+> "Yes, because the program actually links to the library. As such, the terms of the GPL apply to the entire combination.
+       The software modules that link with the library may be under various GPL compatible licenses, but the work as a whole must be licensed under the GPL"
+
+[2] - http://mediatechlaw.mstreetlegal.com/2014/04/25/open-source-dynamic-linking-and-licensing-consideration-for-developers/
+
+[3] - https://lwn.net/Articles/548216/
+
+## What is License compatibility?
 
 In general, license compatibility refers to the fact that you can combine multiple programs of different licenses (which you do not hold the copyright for) as long as you adhere to the license.
 For instance, you may take a BSD and a MIT licensed program and combine them into one proprietary program.
 You may then release this work under a proprietary license and impose any additional restrictions.
 However, you must still fulfill all the requirements of the licenses, which in this example at least requires the inclusion of the original copyright notices.
-Far from every licenses is compatible, as each obligation in the licenses must be fully followed. [p. 161, 5]
+Far from every licenses is compatible, as each obligation in the licenses must be fully followed. [p. 161, 1]
 
 GPLv3 (and similar clause in GPLv2) states that "you may not impose any further restrictions on the exercise of the rights granted or affirmed", which limits its compatibility with other licenses.
-Therefore, one needs to be careful when claiming a license is compatible with GPL, possibly even if the license is listed as compatible by the FSF [p. 160, 5].
+Therefore, one needs to be careful when claiming a license is compatible with GPL, possibly even if the license is listed as compatible by the FSF [p. 160, 1].
 
-#### License Compatibility - Example of Use:
+### License Compatibility - Example of Use:
 
 First, if there are multiple contributors (copyright holders) to a project all must agree to change the license (e.g. by signing a CLA).
-However, you may still change the license to a compatible license [6] (!), details are described here: [7].
+However, you may still change the license to a compatible license [2] (!), details are described here: [3].
 Of course, the old license still applies to the software at that earlier point.
 
 Second, when multiple compatible projects are merged together, all licenses still apply to their respective parts.
 However, if you wish, the combined program can be _seen_ as licensed under the most stringent license present - assuming they are compatible.
-For instance, GPLv3 and Apache 2.0 are compatible, and together a combined work under these licenses could be seen as the strong copyleft GPLv3 [7].
+For instance, GPLv3 and Apache 2.0 are compatible, and together a combined work under these licenses could be seen as the strong copyleft GPLv3 [3].
 
 
-[1] - https://tldrlegal.com/license/gnu-lesser-general-public-license-v2.1-(lgpl-2.1)
+[1] - Andrew M. ST. Laurent (2004), Understanding Open Source and Free Software Licensing, ISBN 978-0596005818
 
-[2] - https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL (included below)
+[2] - https://opensource.stackexchange.com/questions/33/how-can-a-project-be-relicensed/46#46
 
-> "Yes, because the program actually links to the library. As such, the terms of the GPL apply to the entire combination.
-       The software modules that link with the library may be under various GPL compatible licenses, but the work as a whole must be licensed under the GPL"
-
-[3] - http://mediatechlaw.mstreetlegal.com/2014/04/25/open-source-dynamic-linking-and-licensing-consideration-for-developers/
-
-[4] - https://lwn.net/Articles/548216/
-
-[5] - Andrew M. ST. Laurent (2004), Understanding Open Source and Free Software Licensing, ISBN 978-0596005818
-
-[6] - https://opensource.stackexchange.com/questions/33/how-can-a-project-be-relicensed/46#46
-
-[7] - https://www.gnu.org/licenses/license-compatibility.html
+[3] - https://www.gnu.org/licenses/license-compatibility.html
