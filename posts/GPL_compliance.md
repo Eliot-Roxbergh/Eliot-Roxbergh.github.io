@@ -18,7 +18,7 @@ _Eliot Roxbergh 2021-01-27_
 
 ## GPL Main Points
 
-In the following paragraph I try to summarize how the GNU Foundation themselves interpret the GPL license. However, as I mention later in the section on [GPL Linking](#static-vs-dynamic-linking-gpl), some argue that you can go further - e.g. to dynamically link against a GPL program - and still not be contamined (i.e. without being forced to release your work under the GPL or risk getting sued).
+In the following paragraph I try to summarize how the GNU Foundation themselves interpret the GPL license. However, as I mention later in the section on [GPL Linking](#static-vs-dynamic-linking-gpl), some argue that you can go further - e.g. to (in certain cases) dynamically link against a GPL program - and still not be contamined (i.e. without being forced to release your work under the GPL or risk getting sued).
 
 So to be sure that your work is not contaminated by the GPL, the following should apply;
 The work should be an aggregate (as per GPL license), meaning that it is separate and independent from the GPL licensed program. Therefore, the work should be able to function on its own, and any GPL components easily exchanged.
