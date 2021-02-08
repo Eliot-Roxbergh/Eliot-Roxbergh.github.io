@@ -145,8 +145,6 @@ Statically linking can easier be seen as "based on the library" and it could the
 
 
 
-# More Questions
-
 ## Static vs Dynamic Linking is there a Legal Difference for GPL?
 
 To avoid contamination, dynamic linking is generally safer from a legal perspective.
@@ -181,7 +179,7 @@ Far from every licenses is compatible, as each obligation in the licenses must b
 GPLv3 (and similar clause in GPLv2) states that "you may not impose any further restrictions on the exercise of the rights granted or affirmed", which limits its compatibility with other licenses.
 Therefore, one needs to be careful when claiming a license is compatible with GPL, possibly even if the license is listed as compatible by the FSF [p. 160, 1].
 
-### License Compatibility - Example of Use:
+#### License Compatibility - Example of Use:
 
 First, if there are multiple contributors (copyright holders) to a project all must agree to change the license (e.g. by signing a CLA).
 However, you may still change the license to a compatible license [2] (!), details are described here: [3].
