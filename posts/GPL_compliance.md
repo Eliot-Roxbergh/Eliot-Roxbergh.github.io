@@ -7,8 +7,9 @@
 4. [Static vs Dynamic Linking (GPL)](#static-vs-dynamic-linking-gpl)
 5. [What is License Compatibility?](#what-is-license-compatibility)
 
-In this post I have summarized some important things to keep in mind when using GPL, but I do recommend reading the relevant licenses - also explained in detail here [1]. The focus is on GPLv3, but GPLv2, LGPLv2.1, and LGPLv3 are also discussed.
-I am not a lawyer. Additionally, much is still up for debate and depends on jurisdiction and case law.
+In this article I have summarized some important things to keep in mind when using a GPL project together with your own work (under any license).
+I have focused on GPLv3, but GPLv2, LGPLv2.1, and LGPLv3 are also discussed.
+I am not a lawyer and I do recommend reading the relevant licenses - also explained in detail here [1]. Additionally, note that much is still up for debate and depends on jurisdiction and case law.
 
 _Eliot Roxbergh 2021-01-27_
 
