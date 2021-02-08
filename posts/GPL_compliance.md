@@ -14,7 +14,6 @@ I am not a lawyer and I do recommend reading the relevant licenses - also explai
 _Eliot Roxbergh 2021-01-27_
 
 
-
 [1] - https://copyleft.org/guide/
 
 ## GPL Main Points
