@@ -15,7 +15,7 @@ _Eliot Roxbergh 2021-01-27_
 [1] - https://copyleft.org/guide/
 
 Addendum; I use the term _GPL contamination_, referring to situations where using a GPL work incorrectly legally requires you to release your work under the GPL license as well (or stop using the GPL work in a fashion that is not allowed).
-However, one could argue that GPL contamination is too harsh wording, as it only refers to the fact that if you use a GPL work beyond what is specifically allowed in the license you are in breach of contract and could be held liable. And in this situation, you may instead license your work under the GPL and accept to be "contaminated".
+However, one could argue that GPL contamination is too negative wording, as it only refers to the fact that if you use a GPL work beyond what is specifically allowed in the license you are in breach of contract and could be held liable - but in this situation, you may instead license your work under the GPL and accept to be "contaminated".
 
 ## GPL Main Points
 
