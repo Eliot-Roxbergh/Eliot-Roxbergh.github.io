@@ -129,7 +129,9 @@ You may dynamically link against LGPL licensed libraries without disclosing your
 On the other hand, if you statically link you need to provide information to enable users to relink the software,
 this might for instance be the object files of your work. [2]
 Statically linking can easier be seen as "based on the library" and it could therefore be safer to dynamically link when possible (or relicense under LGPL) [3].
-
+ 
+Comment; Instead of licensing your work under the LGPL, it is also technically possible to license under the GPL while explicitly allowing linking (i.e. a _GPL linking exception_) [4]. An example of this is the so called _Classpath exception_, as used in the GNU Classpath Java library [5].
+However, by choosing GPL with the Classpath exception in favor of LGPL, you are foregoing the few requirements (described just above) that other works linking against your work have.
 
 [1] - https://copyleft.org/guide/comprehensive-gpl-guidech11.html
 
@@ -144,6 +146,9 @@ Statically linking can easier be seen as "based on the library" and it could the
               
 [3] - https://www.qt.io/licensing/open-source-lgpl-obligations<Paste>
 
+[4] - https://en.wikipedia.org/wiki/GPL_linking_exception
+
+[5] - https://resources.whitesourcesoftware.com/blog-whitesource/top-9-gpl-with-the-classpath-exception-questions-answered
 
 
 ## Static vs Dynamic Linking (GPL)
@@ -160,6 +165,7 @@ This was also discussed in an LWN article, which states; _"The key point is that
  The dynamically linked libraries that are used at run time could indeed be different—and have different licenses—from the libraries that were specified during the static linking phase.
  This implies that (depending who you ask) declaring the wrong dependencies in a binary could trigger license compliance issues."_ [3]
 
+
 [1] - https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL (included below)
 
 > "Yes, because the program actually links to the library. As such, the terms of the GPL apply to the entire combination.
@@ -168,6 +174,7 @@ This was also discussed in an LWN article, which states; _"The key point is that
 [2] - http://mediatechlaw.mstreetlegal.com/2014/04/25/open-source-dynamic-linking-and-licensing-consideration-for-developers/
 
 [3] - https://lwn.net/Articles/548216/
+
 
 ## What is License compatibility?
 
