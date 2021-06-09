@@ -1,3 +1,5 @@
+---
+{% include_relative posts/patents.md %}
 
 ---
 {% include_relative posts/GPL_compliance.md %}
