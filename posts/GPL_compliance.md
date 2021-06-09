@@ -190,7 +190,7 @@ Therefore, one needs to be careful when claiming a license is compatible with GP
 #### License Compatibility - Example of Use:
 
 First, if there are multiple contributors (copyright holders) to a project _all_ must agree if you are to change license (e.g. by signing a CLA beforehand).
-However, there is an exception, namely you are always allowed to switch to a compatible license [2] (!), details are described here: [3].
+However, there is an exception, namely you are always allowed to switch to a compatible license [2], details are described here: [3].
 Of course, the old license still applies to the software at that earlier point.
 
 Second, when multiple compatible projects are merged together, all licenses still apply to their respective parts.
