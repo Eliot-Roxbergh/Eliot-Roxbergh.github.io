@@ -184,13 +184,13 @@ You may then release this work under a proprietary license and impose any additi
 However, you must still fulfill all the requirements of the licenses, which in this example at least requires the inclusion of the original copyright notices.
 Far from every licenses is compatible, as each obligation in the licenses must be fully followed. [p. 161, 1]
 
-GPLv3 (and similar clause in GPLv2) states that "you may not impose any further restrictions on the exercise of the rights granted or affirmed", which limits its compatibility with other licenses.
+GPLv3 (and a similar clause in GPLv2) states that _"you may not impose any further restrictions on the exercise of the rights granted or affirmed"_, which limits its compatibility with other licenses.
 Therefore, one needs to be careful when claiming a license is compatible with GPL, possibly even if the license is listed as compatible by the FSF [p. 160, 1].
 
 #### License Compatibility - Example of Use:
 
-First, if there are multiple contributors (copyright holders) to a project all must agree to change the license (e.g. by signing a CLA).
-However, you may still change the license to a compatible license [2] (!), details are described here: [3].
+First, if there are multiple contributors (copyright holders) to a project _all_ must agree if you are to change license (e.g. by signing a CLA beforehand).
+However, there is an exception, namely you are always allowed to switch to a compatible license [2] (!), details are described here: [3].
 Of course, the old license still applies to the software at that earlier point.
 
 Second, when multiple compatible projects are merged together, all licenses still apply to their respective parts.
