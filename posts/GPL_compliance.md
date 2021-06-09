@@ -176,7 +176,7 @@ This was also discussed in an LWN article, which states; _"The key point is that
 [3] - <https://lwn.net/Articles/548216/>
 
 
-## What is License compatibility?
+## What is License Compatibility?
 
 In general, license compatibility refers to the fact that you can combine multiple programs of different licenses (which you do not hold the copyright for) as long as you adhere to the license.
 For instance, you may take a BSD and a MIT licensed program and combine them into one proprietary program.
