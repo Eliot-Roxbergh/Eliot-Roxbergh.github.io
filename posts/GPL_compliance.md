@@ -79,10 +79,10 @@ Side note, LGPLv3 incorporates the full GPLv3 license and is therefore equivalen
 [8] - <https://opensource.stackexchange.com/questions/2688/do-you-violate-the-gpl-if-you-provide-source-code-that-cannot-be-compiled>
 
 > Additional discussion\
-<https://softwareengineering.stackexchange.com/questions/50118/avoid-gpl-violation-by-moving-library-out-of-process> \
-<https://softwareengineering.stackexchange.com/questions/367844/can-i-include-a-gpl-v3-binary-with-my-proprietary-application-if-i-prompt-the-us/367850#367850> \
-<https://softwareengineering.stackexchange.com/questions/102778/is-running-an-executable-as-a-child-process-the-same-as-linking-a-library> \
-<https://opensource.stackexchange.com/questions/5447/to-which-extent-gpl-license-contaminates-my-project>
+https://softwareengineering.stackexchange.com/questions/50118/avoid-gpl-violation-by-moving-library-out-of-process \
+https://softwareengineering.stackexchange.com/questions/367844/can-i-include-a-gpl-v3-binary-with-my-proprietary-application-if-i-prompt-the-us/367850#367850 \
+https://softwareengineering.stackexchange.com/questions/102778/is-running-an-executable-as-a-child-process-the-same-as-linking-a-library \
+https://opensource.stackexchange.com/questions/5447/to-which-extent-gpl-license-contaminates-my-project
 
 
 
