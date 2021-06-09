@@ -1,6 +1,7 @@
 # Short on Patents
 
 To expand on the earlier post on licensing, I did a read up on patents which I present here. I am not a lawyer, and this is not legal advice.
+_Eliot Roxbergh 2021-06-09_
 
 Patents is something different than copyright, as it aims to protect an "invention" as opposed to a specific implementation.
 From what I understand, software patents are more broad and powerful in the US than e.g. in the EU.
