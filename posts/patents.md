@@ -16,7 +16,7 @@ Regardless, it is more limited than in the US [2].
 
 ## Patent Exhaustion
 
-If you sell or otherwise distribute a work covered by a patent, the patent is exhausted; then it is no longer possible to sue for patent infringement for that conveyed work.
+If you as a patent holder sell or otherwise distribute a work covered by a patent, the patent is exhausted; then it is no longer possible to sue for patent infringement for that conveyed work.
 This also extends to open source, so that if your work is open sourced you may not sue the users for patent infringement.
 Since an open source license should allow redistribution and modification, anyone can then use, sell, and modify that patented code legally.
 Consequently, patent exhaustion could be a reason why some companies are afraid to contribute to open-source projects.
@@ -39,7 +39,7 @@ I also found [the article prior](https://assets.fenwick.com/legacy/FenwickDocume
 ## Patent Clause
 
 Some licenses have explicit patent clauses, popular examples include GPLv3 and Apache.
-These clauses can be beneficial since it makes it abundantly clear what is and what is not allowed.
+These clauses can be beneficial since they make it abundantly clear what is and what is not allowed.
 Additionally, some licenses (such as the aforementioned) also include a so-called patent retaliation clause.
 
 #### Explicit Clause
@@ -49,7 +49,7 @@ a contributor should not be able to sue the user for patent infringement.
 Additionally, certain rights can be provided by the license in an implicit patent clause (see e.g. GPLv2) [5].
 Still, it is beneficial to have an explicit patent clause in the license, i.e. in writing from the patent holder.
 This is especially true since patent exhaustion, as well as the interpretation and validity of implicit clauses, may differ between jurisdictions [4].
-Another question is whether this has been tested in court, otherwise it makes the situation uncertain.
+Another question is whether an implicit patent clause has been tested in court, otherwise it makes the situation uncertain.³
 That being said, patent exhaustion and the implicit clause in GPLv2 still provide protection in many cases [5].
 
 
@@ -58,6 +58,7 @@ GPLv3 states that every recipient is given the patent license necessary to exerc
 Additionally, you may not impose any restrictions on the rights granted by the license, and if you violate the license your rights provided by the license are terminated [7].
 The latter is often referred to as a _patent retaliation clause_, since if you sue for patent infringement you get penalized [8] - you lose all rights under the license including any patents granted.
 
+³ _I was not able to find any case testing the interpretation of GPLv2's implicit patent clause, but one would think such a case should exist thus shedding some light on this question._
 
 ## Question: Who can get Sued for Infringement
 
