@@ -42,7 +42,7 @@ Some licenses have explicit patent clauses, popular examples include GPLv3 and A
 These clauses can be beneficial since it makes it abundantly clear what is and what is not allowed.
 Additionally, some licenses (such as the aforementioned) also include a so-called patent retaliation clause.
 
-##### Explicit Clause
+#### Explicit Clause
 
 Due to patent exhaustion, even if an open-source license does not have a patent clause,
 a contributor should not be able to sue the user for patent infringement.
@@ -53,7 +53,7 @@ Another question is whether this has been tested in court, otherwise it makes th
 That being said, patent exhaustion and the implicit clause in GPLv2 still provide protection in many cases [5].
 
 
-##### Patent Retaliation
+#### Patent Retaliation
 GPLv3 states that every recipient is given the patent license necessary to exercise _all rights_ provided by the license [6].
 Additionally, you may not impose any restrictions on the rights granted by the license, and if you violate the license your rights provided by the license are terminated [7].
 The latter is often referred to as a _patent retaliation clause_, since if you sue for patent infringement you get penalized [8] - you lose all rights under the license including any patents granted.
