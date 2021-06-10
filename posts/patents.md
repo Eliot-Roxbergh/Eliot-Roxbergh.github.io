@@ -31,7 +31,7 @@ or if the company for instance clone a Git repo, make some changes, and then mak
 (does this count as redistribution which would exhaust any patents applicable for the complete repository, or only for the specific change made?).
 Something to keep in mind. [3]
 
-In [this](https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf) interesting (but dated) article, similar defense is made for an accused infringer and discussed further.
+Comment; In [this](https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf) (dated) article, similar defense is made for an accused infringer and discussed further.
 I also found [the article prior](https://assets.fenwick.com/legacy/FenwickDocuments/IP_Bulletin_Summer_2006.pdf) to be interesting [5].
 
 ² _Mentioned more in-depth here: <https://assets.fenwick.com/legacy/FenwickDocuments/IP_Bulletin_Summer_2006.pdf>_
@@ -56,15 +56,15 @@ That being said, patent exhaustion and the implicit clause in GPLv2 still provid
 ##### Patent Retaliation
 GPLv3 states that every recipient is given the patent license necessary to exercise _all rights_ provided by the license [6].
 Additionally, you may not impose any restrictions on the rights granted by the license, and if you violate the license your rights provided by the license are terminated [7].
-The later is often referred to as a _patent retaliation clause_, since if you sue for patent infringement you get penalized [8] - you lose all rights under the license including any patents granted.
+The latter is often referred to as a _patent retaliation clause_, since if you sue for patent infringement you get penalized [8] - you lose all rights under the license including any patents granted.
 
 
 ## Question: Who can get Sued for Infringement
 
 Question, if an open source project infringes on a patent who is liable?
-Does the explicit patent clauses of GPLv3 and Apache make a difference here?
+As I understand anyone could in theory be sued [9].
+But does the explicit patent clauses of GPLv3, Apache, etc. make a difference here?
 
-This I don't know, as I understand anyone could _in theory_ be sued [7].
 Reading GPLv3, the only mention I can find is _"If you convey a covered work, knowingly relying on a patent license"_, which is a special case.
 
 ## Footnotes
@@ -94,4 +94,4 @@ Reading GPLv3, the only mention I can find is _"If you convey a covered work, kn
 
 > _"In effect, yes. Section 10 prohibits people who convey the software from filing patent suits against other licensees. If someone did so anyway, section 8 explains how they would lose their license and any patent licenses that accompanied it."_
 
-[7] - <https://ocpatentlawyer.com/everyone-in-the-supply-chain-could-be-sued-for-patent-infringement/>
+[9] - <https://ocpatentlawyer.com/everyone-in-the-supply-chain-could-be-sued-for-patent-infringement/>
