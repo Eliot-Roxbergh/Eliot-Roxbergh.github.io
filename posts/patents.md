@@ -132,8 +132,5 @@ But does the explicit patent clauses of GPLv3, Apache, etc. make a difference he
 
 Reading GPLv3, the only mention I can find is _"If you convey a covered work, knowingly relying on a patent license"_, which is a special case.
 
-Or could this apply;
-_"Whenever someone conveys software covered by GPLv3 that they've written or modified, they must provide every recipient with any patent licenses necessary to exercise the rights that the GPL gives them."_[5]
-
 
 [1] - <https://ocpatentlawyer.com/everyone-in-the-supply-chain-could-be-sued-for-patent-infringement/>
