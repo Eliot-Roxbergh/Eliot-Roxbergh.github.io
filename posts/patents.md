@@ -58,31 +58,31 @@ _<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
 Software licenses can mention patents, but not all do.
 However, these licenses can still provide assurances (in the form of a patent license) for the user even when not explicitly stated in the license.
 Open-source licenses state that the users of the software are given several rights, and usually to practice these rights a patent license would be required. Therefore a patent license is implied, as this behavior was specifically allowed by the patent holder as per the license. [3]
-Examples of this can be seen in the MIT license [2] or in the here stronger GPLv2 license. [1]
+Examples of an _implicit patent clause_ can be seen in the MIT license [2] or in the here stronger GPLv2 license, which do not explicitly mention that a patent license is given to the user. [1]
 
 However, the less clear the license is regarding patents, the higher the risk that the implied patent license defense is not recognized for some reason (although this should suffice for most cases in the US for instance [2] [1]).
 For this reason, some licenses provide an explicit patent clause to avoid depending on an implicit interpretation, as done in GPLv3 and Apache.
 
-Additionally, some licenses (such as the aforementioned: GPLv3 and Apache) also include a so-called patent retaliation clause.
-A _patent retaliation clause_, is a clause that penalizes a user who would sue a contributor (i.e. author) of the open source project.
+Additionally, some licenses (such as the aforementioned: GPLv3 and Apache) also include a so-called _patent retaliation clause_.
+A patent retaliation clause, is a clause that penalizes a user who would sue a contributor (i.e. author) of the open source project.
 In which case, the license is terminated and the plaintiff (the user) loses all their rights under the license including any patents granted [7].
 
 #### Explicit Clause
 
 As described earlier, due to an implied patent license (where patent exhaustion applies), the licensee is often allowed to freely use and distribute the covered work even if the open-source license does not mention patents specifically.
-
-Still, it is beneficial to have an explicit patent clause in the license, i.e. in writing from the patent holder.
+Still, it is beneficial to have an explicit patent clause in the license, i.e. in writing from the patent holder that a patent license is granted.
 This is mainly true since patent exhaustion, as well as the interpretation and validity of implicit clauses, may differ between jurisdictions - and there could be certain edge cases [4] [1] [3].
 Another question is whether an implicit patent clause has been tested in court, otherwise it makes the situation uncertain [1].¹
 That being said, patent exhaustion and the implicit clause in GPLv2 still provide protection in many cases and jurisdictions [3].
 
+Here follows small excerpts from the main licenses mentioned earlier relating to patent licenses,\
 In GPLv3 we have the explicit statement;\
-_"Whenever someone conveys software covered by GPLv3 that they've written or modified, they must provide every recipient with any patent licenses necessary to exercise the rights that the GPL gives them."_ [5]
+_"Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version."_ [6]
 
-And in GPLv2 a weaker statement;\
+GPLv2 has an implicit statement (which does not specifically mention that users receive a patent license);\
 _"if a patent license would not permit royalty-free redistribution of the Program by all those who receive copies directly or indirectly through you, then the only way you could satisfy both it and this License would be to refrain entirely from distribution of the Program."_ [4]
 
-Finally in MIT, an even weaker statement when it comes to patents;\
+Finally in MIT, we see an even weaker implicit statement which does not mention patents at all;\
 _"Permission is hereby granted [..] to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
