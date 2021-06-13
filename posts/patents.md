@@ -43,8 +43,8 @@ For these reasons, patent exhaustion could be why some companies are hesitant to
 
 
 Software licenses can mention patents, but not all do.
-However, these licenses can still provide assurances in the form of an implied patent license for the user;
-Open-source licenses state that the users of the software are given several rights, and if a patent license would be required to practice these rights such a license can be implied (as this behavior was specifically allowed by the patent holder as per the license) [3].
+However, these licenses can still provide assurances (in addition to patent exhaustion) in the form of an implied patent license for the user;
+Open-source licenses state that the users of the software are given several rights, and if a patent license would be required to practice these rights, such a license can be implied (as this behavior was specifically allowed by the patent holder as per the license) [3].
 Therefore, the licensee is allowed to freely use and distribute the covered work even if the open-source license does not mention patents specifically.
 Examples of an _implicit patent clause_ can be seen in the MIT license [2] or in the here stronger GPLv2 license, as these do not explicitly mention that a patent license is given to the user. [1]
 
