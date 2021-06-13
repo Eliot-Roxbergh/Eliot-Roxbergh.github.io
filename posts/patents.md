@@ -35,8 +35,6 @@ or if the company for instance clone a Git repo, make some changes, and then mak
 Something to keep in mind, more on this here [1].
 For these reasons, patent exhaustion could be why some companies are hesitant to contribute to open-source projects.
 
-Comment; In this (slightly dated) article, patent exhaustion and more defenses are discussed for an accused infringer: 
-_<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
 
 [1] - <https://blog.hansenpartnership.com/a-roadmap-for-eliminating-patents-in-open-source/>, <https://lwn.net/Articles/780078/>
 
@@ -46,7 +44,7 @@ _<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
 
 Software licenses can mention patents, but not all do.
 However, these licenses can still provide assurances in the form of an implied patent license for the user;
-Open-source licenses state that the users of the software are given several rights, and since a patent license would be required to practice these rights, such a license can often be implied (as this behavior was specifically allowed by the patent holder as per the license) [3].
+Open-source licenses state that the users of the software are given several rights, and if a patent license would be required to practice these rights such a license can be implied (as this behavior was specifically allowed by the patent holder as per the license) [3].
 Therefore, the licensee is allowed to freely use and distribute the covered work even if the open-source license does not mention patents specifically.
 Examples of an _implicit patent clause_ can be seen in the MIT license [2] or in the here stronger GPLv2 license, as these do not explicitly mention that a patent license is given to the user. [1]
 
@@ -63,6 +61,8 @@ Otherwise, no patent rights are given and the holder may choose to enforce the p
 Since an open source license should allow redistribution and modification, anyone could in theory then use, sell, and modify that patented code legally.
 So by the nature of open source, someone could potentially extract and modify the patented code and use it (i.e. the derivative work) themselves without infringing on any patents you hold (or the license). Although from a patent viewpoint, this could be restricted depending on the interpretation of the patent license granted by the license, where an explicit patent clause could provide stronger rights.³
 
+Comment; This article discuss defenses regarding the implicit patent license of GPLv2: 
+_<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
 
 ¹ _I was unable to find any case testing the interpretation of GPLv2's implicit patent clause, but one would think such a case should exist thus shedding some light on this question._
 
@@ -76,8 +76,8 @@ So by the nature of open source, someone could potentially extract and modify th
 Some licenses also include a so-called _patent retaliation clause_, this penalizes a user who would sue a contributor (i.e. author) of the open source project.
 In which case, the license is terminated and the plaintiff (i.e. the user) loses all their rights under the license including any patents granted [7].
 
-The Apache and GPLv3 licenses include a patent retaliation clause.
-GPLv3 states that every recipient is given the patent license necessary to exercise _all rights_ provided by the license (i.e explicit patent clause) [5].
+Two licenses which include a patent retaliation clause are Apache and GPLv3.
+GPLv3 states that every recipient is given the patent license necessary to exercise _all rights_ provided by the license (i.e an explicit patent clause) [5].
 Additionally, you may not impose any restrictions on the rights granted by the license, and if you violate the license your rights provided by the license are terminated [6].
 As we see in the latter statement, GPLv3 provides a patent retailiation clause that if you in anyway restrict the users' rights your license is terminated.
 This would for instance apply if you sue for patent infringement.
