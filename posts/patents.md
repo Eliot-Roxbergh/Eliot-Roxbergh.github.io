@@ -67,7 +67,7 @@ Additionally, some licenses (such as the aforementioned: GPLv3 and Apache) also 
 A patent retaliation clause, is a clause that penalizes a user who would sue a contributor (i.e. author) of the open source project.
 In which case, the license is terminated and the plaintiff (the user) loses all their rights under the license including any patents granted [7].
 
-### Implicit Clause
+#### Implicit Clause
 
 As described earlier, due to an implied patent license (where patent exhaustion applies), the licensee is often allowed to freely use and distribute the covered work even if the open-source license does not mention patents specifically.
 Still, it is beneficial to have an explicit patent clause in the license, i.e. in writing from the patent holder that a patent license is granted.
@@ -75,14 +75,14 @@ This is mainly true since patent exhaustion, as well as the interpretation and v
 Another question is whether an implicit patent clause has been tested in court, otherwise it makes the situation uncertain [1].¹
 That being said, patent exhaustion and the implicit clause in e.g. GPLv2 still provide protection in many cases and jurisdictions [3].
 
-### Patent Retaliation in GPLv3
+#### Patent Retaliation in GPLv3
 
 GPLv3 states that every recipient is given the patent license necessary to exercise _all rights_ provided by the license (i.e explicit patent clause) [5].
 Additionally, you may not impose any restrictions on the rights granted by the license, and if you violate the license your rights provided by the license are terminated [6].
 As we see in the latter statement, GPLv3 provides a patent retailiation clause that if you in anyway restrict the users' rights your license is terminated.
 This would for instance apply if you sue for patent infringement.
 
-### Examples from the GPLv3, GPLv2, and MIT Licenses
+#### Examples from the GPLv3, GPLv2, and MIT Licenses
 
 Here follows small excerpts from the main licenses mentioned earlier relating to patent licenses,\
 In GPLv3 we have the explicit statement;\
