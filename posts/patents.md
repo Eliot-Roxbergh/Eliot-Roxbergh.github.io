@@ -30,22 +30,22 @@ Consequently, patent exhaustion could be a reason why some companies are hesitan
 With patent exhaustion, note that the patent is still in effect and enforceable, however just not when it comes to the distributed work in question.
 Regardless, due to the nature of open source, someone could potentially extract and modify the patented code and use it (the derivative work) themselves without infringing on any patents you hold (or the license). Although from a patent viewpoint this could be restricted depending on the interpretation of the patent license granted by the license, where an explicit patent clause could provide stronger rights.¹
 Moreover, the work is still obviously covered by copyright, and its license may put additional restrictions thereon.
-For instance, if the patent holder distributes the patented work under GPLv3, for someone (i.e. a licensee) to then utilize the granted patent license in their own work it must constitute a derived work and thus also be licensed under GPLv3.
+For instance, if the patent holder distributes the patented work under GPLv3, for someone (i.e. a licensee) to then utilize the granted patent license in their own work it must constitute a derived work, and thus also be licensed under GPLv3 (as is one of the requirements of the GPLv3 license).
 Otherwise, no patent rights are given and the holder may enforce the patent.² [2]
 
 
-Taking patent exhaustion further, it might apply for redistribution
-(e.g. if a company redistributes a large project like Linux could they exhaust all their related patents?),
+Taking patent exhaustion further, it usually applies for redistribution
+(e.g. if a company redistributes a large project like Linux it could be possible that they exhaust all their related patents),
 or if the company for instance clone a Git repo, make some changes, and then make a pull request
-(does this count as redistribution which would exhaust any patents applicable for the complete repository, or only for the specific change made?).
+(however, does this count as redistribution which would exhaust any patents applicable for the complete repository, or only for the specific change made?).
 Something to keep in mind, more on this here [1].
 
-Comment; In this slightly dated article, patent exhaustion and more defenses are discussed for an accused infringer: 
+Comment; In this (slightly dated) article, patent exhaustion and more defenses are discussed for an accused infringer: 
 _<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
 
 ¹ _For instance it is not as clear if the licensee changes or adds directly to the patented code, whether that addition is covered by the implied patent license they have received. Mentioned here regarding GPLv2 in the EU: <http://en.swpat.org/wiki/Implicit_patent_licence#European_Union>._
 
-² _Discussed more in-depth here: [2]._
+² _Discussed more in-depth here [2]._
 
 
 [1] - <https://blog.hansenpartnership.com/a-roadmap-for-eliminating-patents-in-open-source/>, <https://lwn.net/Articles/780078/>
@@ -69,7 +69,7 @@ In which case, the license is terminated and the plaintiff (the user) loses all 
 
 #### Implicit Clause
 
-As described earlier, due to an implied patent license (where patent exhaustion applies), the licensee is often allowed to freely use and distribute the covered work even if the open-source license does not mention patents specifically.
+As mentioned earlier, due to an implied patent license, the licensee is often allowed to freely use and distribute the covered work even if the open-source license does not mention patents specifically.
 Still, it is beneficial to have an explicit patent clause in the license, i.e. in writing from the patent holder that a patent license is granted.
 This is mainly true since patent exhaustion, as well as the interpretation and validity of implicit clauses, may differ between jurisdictions - and there could be certain edge cases [4][1][3].
 Another question is whether an implicit patent clause has been tested in court, otherwise it makes the situation uncertain [1].¹
