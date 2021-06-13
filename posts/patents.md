@@ -28,7 +28,7 @@ Since an open source license should allow redistribution and modification, anyon
 Consequently, patent exhaustion could be a reason why some companies are hesitant to contribute to open-source projects.
 
 With patent exhaustion, note that the patent is still in effect and enforceable, however just not when it comes to the distributed work in question.
-Regardless, due to the nature of open source, someone could potentially extract and modify the patented code and use it (the derivative work) themselves without infringing on any patents you hold (or the license). Although from a patent viewpoint this could be restricted depending on the interpretation of the patent license granted by the license.¹
+Regardless, due to the nature of open source, someone could potentially extract and modify the patented code and use it (the derivative work) themselves without infringing on any patents you hold (or the license). Although from a patent viewpoint this could be restricted depending on the interpretation of the patent license granted by the license, where an explicit patent clause could provide stronger rights.¹
 Moreover, the work is still obviously covered by copyright, and its license may put additional restrictions thereon.
 For instance, if the patent holder distributes the patented work under GPLv3, for someone (i.e. a licensee) to then utilize the granted patent license in their own work it must constitute a derived work and thus also be licensed under GPLv3.
 Otherwise, no patent rights are given and the holder may enforce the patent.² [2]
@@ -43,7 +43,7 @@ Something to keep in mind, more on this here [1].
 Comment; In this slightly dated article, patent exhaustion and more defenses are discussed for an accused infringer: 
 _<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
 
-¹ _For instance it is not as clear if the licensee changes or adds directly to the patented code, whether that addition is covered by the patent license they have received. Mentioned here regarding GPLv2 in the EU: <http://en.swpat.org/wiki/Implicit_patent_licence#European_Union>._
+¹ _For instance it is not as clear if the licensee changes or adds directly to the patented code, whether that addition is covered by the implied patent license they have received. Mentioned here regarding GPLv2 in the EU: <http://en.swpat.org/wiki/Implicit_patent_licence#European_Union>._
 
 ² _Discussed more in-depth here: [2]._
 
