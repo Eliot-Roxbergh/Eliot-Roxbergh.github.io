@@ -2,11 +2,11 @@
 
 To expand on the earlier post on licensing, I did a read up on patents which I present here. I am not a lawyer, this is not legal advice, and I might even be wrong.
 
-Patents unlike copyright, aims to protect an "invention" as opposed to a specific work.
-In practice patents depend heavily on the jurisdiction and below I refer to US law.
-Where from what I understand, software patents are more broad and powerful than e.g. in the EU.
-If a patent holder distributes a work, they are should not be able to sue legitimate users for patent infringement: two possible defenses are patent exhaustion and implicit/explicit patent clause from the software license [1].
-Software patents are quite controversial, but that is a topic for another time.\
+Patents, unlike copyright, aims to protect an "invention" as opposed to a specific work.
+In practice, patents depend heavily on the jurisdiction, and below I refer to US law.
+Where, from what I understand, software patents are more broad and powerful than in the EU.
+If a patent holder distributes a work, they should not be able to sue legitimate users for patent infringement: two possible defenses are patent exhaustion and implicit/explicit patent clause from the software license [1].
+Software patents are pretty controversial, but that is a topic for another time.\
 _Eliot Roxbergh 2021-06-09_
 
 Comment regarding the EU;
@@ -24,8 +24,8 @@ Regardless, it is more limited than in the US [3].
 
 ## Patent Exhaustion
 
-If you as a patent holder, sell or otherwise distribute a work covered by your patent, the patent is exhausted; then it is no longer possible to sue for patent infringement for that conveyed work (does this hold for all possible uses of the work?).
-This also applies for open source distribution, so that if your work is open sourced you may not sue the users for patent infringement [1].
+If you, as a patent holder, sell or otherwise distribute a work covered by your patent, the patent is exhausted. Then it is no longer possible for them to sue for patent infringement for that conveyed work (does this hold for all possible uses of the work?).
+This also applies for open source distribution, so that if your work is released as such, you may not sue the users for patent infringement [1].
 With patent exhaustion, note that the patent is still in effect and enforceable, however just not when it comes to the distributed work in question.
 
 Taking patent exhaustion further, it usually applies for redistribution
@@ -52,23 +52,22 @@ However, the less clear the license is regarding patents, the higher the risk th
 Another question is to what extent an implicit patent clause has been tested in court, as it otherwise makes the situation uncertain [1].¹
 For these reasons, some licenses provide an explicit patent clause to avoid depending on an implicit interpretation, as seen in GPLv3 and Apache.
 In these licenses, it is stated explicitly that the patent holder grants a patent license for use according to the terms of the license.
-That being said, the implicit clause in e.g. GPLv2 still provide protection in many cases and jurisdictions [3].
+That being said, the implicit clause in e.g. GPLv2, still provides protection in many cases and jurisdictions [3].
 
 Regardless of patents, the work is still naturally covered by copyright, and its license may put additional restrictions thereon.
 For instance, if the patent holder distributes the patented work under GPLv3, for a licensee to then utilize the granted patent license in their own work it must constitute a derived work, and thus also be licensed under GPLv3 (as is one of the requirements of the GPLv3 license).
-Otherwise, no patent rights are given and the holder may choose to enforce the patent (remember that both patent exhaustion and a patent clause only gives rights when handling the conveyed work in question).² [8]
+Otherwise, no patent rights are given, and the holder may choose to enforce the patent (remember that both patent exhaustion and a patent clause only gives rights when handling the conveyed work in question).² [8]
 
-Since an open source license should allow redistribution and modification, anyone could in theory then use, sell, and modify that patented code legally.
+Since an open-source license should allow redistribution and modification, anyone could, in theory, then use, sell, and modify that patented code legally.
 So by the nature of open source, someone could potentially extract and modify the patented code and use it (i.e. the derivative work) themselves without infringing on any patents you hold (or the license). Although from a patent viewpoint, this could be restricted depending on the interpretation of the patent license granted by the license, where an explicit patent clause could provide stronger rights.³
 
-Comment; This article discuss defenses regarding the implicit patent license of GPLv2: 
-_<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
+Comment; This article discusses defenses regarding the implicit patent license of GPLv2: _<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
 
-¹ _I was unable to find any case testing the interpretation of GPLv2's implicit patent clause, but one would think such a case should exist thus shedding some light on this question._
+¹ _I could not find any case testing the interpretation of GPLv2's implicit patent clause, but one would think such a case should exist, thus shedding some light on this question._
 
 ² _Discussed more in-depth here [2]._
 
-³ _For instance it is not as clear if the licensee changes or adds directly to the patented code, whether that addition is covered by the implied patent license they have received. Mentioned here regarding GPLv2 in the EU: <http://en.swpat.org/wiki/Implicit_patent_licence#European_Union>._
+³ _For instance, it is not as clear if the licensee changes or adds directly to the patented code, whether that addition is covered by the implied patent license they have received. Mentioned here regarding GPLv2 in the EU: <http://en.swpat.org/wiki/Implicit_patent_licence#European_Union>._
 
 
 #### Patent Retaliation in GPLv3
@@ -76,11 +75,11 @@ _<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
 Some licenses also include a so-called _patent retaliation clause_, this penalizes a user who would sue a contributor (i.e. author) of the open source project.
 In which case, the license is terminated and the plaintiff (i.e. the user) loses all their rights under the license including any patents granted [7].
 
-Two licenses which include a patent retaliation clause are Apache and GPLv3.
-GPLv3 states that every recipient is given the patent license necessary to exercise _all rights_ provided by the license (i.e an explicit patent clause) [5].
-Additionally, you may not impose any restrictions on the rights granted by the license, and if you violate the license your rights provided by the license are terminated [6].
-As we see in the latter statement, GPLv3 provides a patent retailiation clause that if you in anyway restrict the users' rights your license is terminated.
-This would for instance apply if you sue for patent infringement.
+Two licenses that include a patent retaliation clause are Apache and GPLv3.
+GPLv3 states that every recipient is given the patent license necessary to exercise _all rights_ provided by the license (i.e. an explicit patent clause) [5].
+Additionally, you may not impose any restrictions on the rights granted by the license, and if you violate the license, your rights provided by the license are terminated [6].
+As we see in the latter statement, GPLv3 provides a patent retaliation clause that if you in any way restrict the users' rights, your license is terminated.
+This would, for instance, apply if you sue for patent infringement.
 
 #### Examples from the GPLv3, GPLv2, and MIT Licenses
 
@@ -91,7 +90,7 @@ _"Each contributor grants you a non-exclusive, worldwide, royalty-free patent li
 GPLv2 has an implicit statement (which does not specifically mention that users receive a patent license);\
 _"if a patent license would not permit royalty-free redistribution of the Program by all those who receive copies directly or indirectly through you, then the only way you could satisfy both it and this License would be to refrain entirely from distribution of the Program."_ [4]
 
-Finally in MIT, we see an even weaker implicit statement which does not mention patents at all;\
+Finally, in MIT, we see an even weaker implicit statement which does not mention patents at all;\
 _"Permission is hereby granted [..] to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
@@ -123,11 +122,11 @@ furnished to do so"_ [2]
 
 > _"In effect, yes. Section 10 prohibits people who convey the software from filing patent suits against other licensees. If someone did so anyway, section 8 explains how they would lose their license and any patent licenses that accompanied it."_
 
-[8] - <https://assets.fenwick.com/legacy/FenwickDocuments/IP_Bulletin_Summer_2006.pdf>_
+[8] - <https://assets.fenwick.com/legacy/FenwickDocuments/IP_Bulletin_Summer_2006.pdf>
 
 ## Question: Who can get Sued for Infringement
 
-Question, if an open source project infringes on a patent who is liable?
+Question, if an open-source project infringes on a patent who is liable?
 Anyone could in theory be sued [1],
 but does the patent clauses of GPLv3, Apache, etc. make a difference here?
 
@@ -135,3 +134,4 @@ Reading GPLv3, the only mention I can find is _"If you convey a covered work, kn
 
 
 [1] - <https://ocpatentlawyer.com/everyone-in-the-supply-chain-could-be-sued-for-patent-infringement/>
+
