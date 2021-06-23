@@ -1,6 +1,6 @@
 # Short on Patents
 
-To expand on the earlier article on licensing, I did a read up on patents which I present here. I am not a lawyer, this is not legal advice, and I might be wrong.\
+To expand on the earlier article on GPL licensing, I did a read up on patents in open-source software which I present here. I am not a lawyer, this is not legal advice, and I might be wrong.\
 _Eliot Roxbergh 2021-06-09_
 
 
@@ -10,7 +10,7 @@ Software patents are controversial, but that is a topic for another time.
 
 
 Comment regarding the EU;
-In the European Union, "programs for computers" are said to be not patentable, but in practice, (certain) software patents are both present and enforceable [2] (although seemingly more limited than in the US [3]).¹
+In the European Union, "programs for computers" are said to be not patentable, but in practice, certain software patents are both present and enforceable [2] (although seemingly more limited than in the US [3]).¹
 Still, the general ideas presented here apply.
 Namely, we have patent exhaustion as well as you cannot expect to sue your users for behavior that you clearly allow in the license (i.e. implicit patent clause).
 The issues with software patents are also less severe [3], partly since it is harder for patent trolls to operate, as they need to pay legal costs if the suit is lost [4].
