@@ -95,7 +95,7 @@ GPLv3 and LGPLv3 are generally stricter than GPLv2 and LGPLv2.1, respectively.
 3. Similar with patents - (L)GPLv3 provide an explicit patent clause [4], also described in [1,4,5]. While GPLv2 and LGPLv2.1 only give an "implicit patent license" [5].
 As a result of this, as I understand, the Apache license is incompatible with GPLv2 but is compatible with GPLv3 [6].
 
-Read more here [5, 7].
+Read more here [5, 7], and the changes more in detail [8].
 
 
 
@@ -117,7 +117,7 @@ Read more here [5, 7].
       
 [7] - <https://www.gnu.org/licenses/rms-why-gplv3.html>
 
-
+[8] - <https://www.ipa.go.jp/files/000028295.pdf> (Eben Moglen, GPL3: Process and Product, 21 December 2007)
 
 ## How is LGPL Weaker than GPL?
 
