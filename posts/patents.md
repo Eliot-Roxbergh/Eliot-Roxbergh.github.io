@@ -30,7 +30,7 @@ So this could then, in some cases, make a company's patents harder to enforce.
 
 The situation is not as clear-cut or as general as one might think (or as I wanted to believe). Instead, it highly depends on the jurisdiction and the license text in question. If the license provides certain rights, such as to use and modify the software, it would be hard for the author to argue that a patent they hold could then restrict those rights they have explicitly granted (i.e. an implicit patent license can generally be assumed for the allowed use, as stated in the software license).
 Still, it is not entirely certain in all jurisdictions, and it is beneficial to be as clear as possible. For instance, one might interpret a legislation as recognizing an implicit patent clause, but it could be uncertain until such a case has been tested in court.
-This is why some modern licenses include a clause that explicitly grants a patent license to the users.
+This is why some modern licenses (such as GPLv3, discussed later) include a clause that explicitly grants a patent license to the users.
 However, if the implicit clause is not recognized, it is entirely possible to use other defenses, such as claiming that the holder exhausted their patent license when distributing the software.
 
 #### Remaining Questions
@@ -39,7 +39,7 @@ One aspect I have not considered here, is how a patent suit would play out in pr
 
 Another question; if an open-source project infringes on a patent, who is held liable?
 Anyone can in theory be sued (such as the author, distributor, or user), and this in practice largely depends on who has the money [5].
-However, does some licenses "change" (or make clearer) who is liable for patent infringement?
+However, do some licenses "change" (or make clearer) who is liable for patent infringement?
 For instance, does the patent clause in GPLv3 or Apache make a difference here?
 Reading the GPLv3, I did not find any direct mention of this.²
 And to the contrary, by distributing a work under _any_ license I would assume you are more likely to be liable than a mere user of the software.
@@ -72,7 +72,7 @@ This also applies for open source distribution, so that if the work is released 
 With patent exhaustion, note that the patent is still in effect and enforceable, however just not when it comes to the distributed work in question.
 
 Taking patent exhaustion further, it usually applies for redistribution
-(e.g. if a company redistributes a large project like Linux it could be possible that they exhaust all their related patents),
+(e.g. if a company redistribute a large project like Linux it could be possible that they exhaust all their related patents),
 or if the company for instance clone a Git repo, make some changes, and then make a pull request
 (however, does this count as redistribution which would exhaust any patents applicable for the complete repository, or only for the specific change made?).
 Something to keep in mind, more on this here [1].
