@@ -19,7 +19,7 @@ The issues with software patents are also less severe [3], partly since it is ha
 
 Initially, my questions were i) why are companies sometimes hesitant to contribute to open-source software from an intellectual property perspective? Considering many (if not all) companies in some way use such software, to then share their changes upstream could benefit them by lowering their technical debt.
 And ii) what is the risk for a consumer of open-source software to be liable, mainly does a party absolve its patent rights by distributing a work under an open-source license.
-To partially answer both these questions, I later give two main examples on when patents rights are not enforeable when distributing an open-source work.
+To partially answer both these questions, I later give two main examples on when patent rights are not enforeable when distributing an open-source work.
 
 #### Summary
 
