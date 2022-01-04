@@ -67,6 +67,7 @@ We also see this reflected in the wording of GPLv3, _"A "contributor" is a copyr
 
 ## Patent Exhaustion
 
+Firstly, a possible defense is to argue patent exhaustion (regardless of the software license).
 If a patent holder, sell or otherwise distribute a work covered by their patent, the patent is exhausted. Then it is no longer possible for them to sue for patent infringement for that conveyed work (however, does this hold for all possible uses of the work?).
 This also applies for open source distribution, so that if the work is released as such, they may not sue the users for patent infringement [1].
 With patent exhaustion, note that the patent is still in effect and enforceable, however just not when it comes to the distributed work in question.
@@ -74,7 +75,7 @@ With patent exhaustion, note that the patent is still in effect and enforceable,
 Taking patent exhaustion further, it usually applies for redistribution
 (e.g. if a company redistribute a large project like Linux it could be possible that they exhaust all their related patents),
 or if the company for instance clone a Git repo, make some changes, and then make a pull request
-(however, does this count as redistribution which would exhaust any patents applicable for the complete repository, or only for the specific change made?).
+(however, does this count as redistribution which would exhaust any patents applicable for the complete repository, or only for the specific changes made?).
 Something to keep in mind, more on this here [1].
 For these reasons, patent exhaustion could be why some companies are hesitant to contribute to open-source projects.
 
@@ -85,13 +86,14 @@ For these reasons, patent exhaustion could be why some companies are hesitant to
 ## Patent Clauses in open-source Licenses
 
 
-Software licenses can mention patents, but not all do.
-However, these licenses can still provide assurances (in addition to patent exhaustion) in the form of an implied patent license for the user;
+Secondly, other defenses could be based on the rights granted in the provided software license.
+To make it absolutely clear, the license can state that its users receive a patent license for the covered work, this is what is called an _explicit patent clause_.
+However, even if such a clause is not included, the license can still provide assurances (not to be confused with patent exhaustion) in the form of an implied patent license for the user;
 Open-source licenses state that the users of the software are given several rights, and if a patent license would be required to practice these rights, such a license can be implied (as this behavior was specifically allowed by the patent holder as per the license) [3].
-Therefore, the licensee is allowed to freely use and distribute the covered work even if the open-source license does not mention patents specifically.
+Therefore, the licensee should be allowed to freely use and distribute the covered work (according to the terms of the license) even if the open-source license does not mention patents specifically.
 Examples of an _implicit patent clause_ can be seen in the MIT license [2] or in the here stronger GPLv2 license, as these do not explicitly mention that a patent license is given to the user. [1]
 
-However, the less clear the license is regarding patents, the higher the risk that the implied patent license defense is not recognized for some reason (although this should suffice for most cases in the US for instance [2][1]) or that the extent of this patent license is insufficient as there might be certain edge cases [4][1][3].
+The less clear the license is regarding patents, the higher the risk that the implied patent license defense is not recognized for some reason (although this should suffice for most cases in the US, for instance [2][1]) or that the extent of this patent license is insufficient as there might be certain edge cases [4][1][3].
 Another question is to what extent an implicit patent clause has been tested in court, as it otherwise makes the situation uncertain [1].¹
 For these reasons, some licenses provide an explicit patent clause to avoid depending on an implicit interpretation, as seen in GPLv3 and Apache.
 In these licenses, it is stated explicitly that the patent holder grants a patent license for use according to the terms of the license.²
@@ -124,9 +126,9 @@ In which case, the license is terminated and the plaintiff (i.e. the suing party
 <!--- So by suing anyone over the open-source software in question, they (i.e. the plaintiff) lose their related rights, such as to modify or convey the work as well as any patent rights granted.¹ -->
 
 Two examples of licenses that include a patent retaliation clause are Apache and GPLv3.²
-GPLv3 states that every recipient is given the patent license necessary to exercise _all rights_ provided by the license (i.e. an explicit patent clause) [5].
-Additionally, it states, you may not impose any restrictions on the rights granted by the license, and if you violate the license, your rights provided by the license are terminated [6].
+GPLv3 states that you may not impose any restrictions on the rights granted by the license, and if you violate the license, your rights provided by the license are terminated [6].
 Here, they also specifically mention that _"you may not initiate litigation [..] alleging that any patent claim is infringed by making, using, selling, offering for sale, or importing the Program or any portion of it"_.
+Regarding the explicit patent clause, GPLv3 states that every recipient is given the patent license necessary to exercise _all rights_ provided by the license [5].
 
 
 ¹ _Although, arguably, they may still use the software, considering GPLv3 states: "You are not required to accept this License in order to receive or run a copy of the Program"_
@@ -135,7 +137,7 @@ Here, they also specifically mention that _"you may not initiate litigation [..]
 
 #### Examples from the GPLv3, GPLv2, and MIT Licenses
 
-Here follows small excerpts from the main licenses mentioned earlier, as relevant for patent licenses,\
+Here follows small excerpts from the main licenses mentioned earlier, as relevant for patent licenses.\
 In GPLv3 we have the explicit statement;\
 _"Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version."_ [6]
 
