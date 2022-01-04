@@ -19,6 +19,7 @@ The issues with software patents are also less severe [3], partly since it is ha
 
 Initially, my questions were i) why are companies sometimes hesitant to contribute to open-source software from an intellectual property perspective? Considering many (if not all) companies in some way use such software, to then share their changes upstream could benefit them by lowering their technical debt.
 And ii) what is the risk for a consumer of open-source software to be liable, mainly does a party absolve its patent rights by distributing a work under an open-source license.
+To partially answer both these questions, I later give two main examples on when patents rights are not enforeable when distributing an open-source work.
 
 #### Summary
 
@@ -68,7 +69,7 @@ We also see this reflected in the wording of GPLv3, _"A "contributor" is a copyr
 ## Patent Exhaustion
 
 Firstly, a possible defense is to argue patent exhaustion (regardless of the software license).
-If a patent holder, sell or otherwise distribute a work covered by their patent, the patent is exhausted. Then it is no longer possible for them to sue for patent infringement for that conveyed work (however, does this hold for all possible uses of the work?).
+Namely, if a patent holder, sell or otherwise distribute a work covered by their patent, the patent is exhausted. Then it is no longer possible for them to sue for patent infringement for that conveyed work (however, does this hold for all possible uses of the work?).
 This also applies for open source distribution, so that if the work is released as such, they may not sue the users for patent infringement [1].
 With patent exhaustion, note that the patent is still in effect and enforceable, however just not when it comes to the distributed work in question.
 
