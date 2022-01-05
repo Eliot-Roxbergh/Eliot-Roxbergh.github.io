@@ -21,10 +21,19 @@ In short, these reasons are patent exhaustion as well as the rights given in the
 
 
 Comment regarding the EU;
-In the European Union, "programs for computers" are said to be not patentable, but in practice, certain software patents are both present and enforceable [2] (although seemingly more limited than in the US [3]).¹
+In the European Union, "programs for computers" are said to be not patentable, but in practice, certain software patents are both present and enforceable [1] (although seemingly more limited than in the US [2]).¹
 Still, the general ideas presented here apply.
 Namely, we have patent exhaustion as well as you cannot expect to sue your users for behavior that you clearly allow in the license (i.e. implicit patent clause).
-The issues with software patents are also less severe [3], partly since it is harder for patent trolls to operate, as they need to pay legal costs if the suit is lost [4].
+The issues with software patents are also less severe [2], partly since it is harder for patent trolls to operate, as they need to pay legal costs if the suit is lost [3].
+
+¹ _More on this here: <https://www.bardehle.com/europeansoftwarepatents/software-patent-epo/> (and also <https://en.wikipedia.org/wiki/Software_patents_under_the_European_Patent_Convention>)._
+
+[1] - <https://fsfe.org/activities/swpat/swpat.en.html>, <https://www.epo.org/law-practice/legal-texts/html/epc/2020/e/ar52.html>
+
+[2] - <https://startupxplore.com/en/blog/startup-patents-in-europe/>, <https://thenextweb.com/news/how-the-us-patent-mess-affects-european-tech-and-startups>
+
+[3] - Voet, Milan, Trolling the U.S. and EU Patent System: Solved by a Loser-Pays-Attorney-Fees Regime? (May 4, 2018). Available at SSRN: <https://ssrn.com/abstract=3463481>
+
 
 ## Summary
 
@@ -39,16 +48,7 @@ Still, it is not entirely certain in all jurisdictions, and it is beneficial to 
 This is why some modern licenses (such as GPLv3, discussed later) include a clause that explicitly grants a patent license to the users.
 However, if the implicit clause is not recognized, it is entirely possible to use other defenses, such as claiming that the holder exhausted their patent license when distributing the software.
 
-¹ _More on this here: <https://www.bardehle.com/europeansoftwarepatents/software-patent-epo/> (and also <https://en.wikipedia.org/wiki/Software_patents_under_the_European_Patent_Convention>)._
-
-
 [1] - <https://www.elgaronline.com/view/journals/qmjip/8-3/qmjip.2018.03.03.xml>, <https://www.ipmvs.com/news/the-federal-circuit-defines-implied-licenses-and-examines-exhaustion-doctrine/>
-
-[2] - <https://fsfe.org/activities/swpat/swpat.en.html>, <https://www.epo.org/law-practice/legal-texts/html/epc/2020/e/ar52.html>
-
-[3] - <https://startupxplore.com/en/blog/startup-patents-in-europe/>, <https://thenextweb.com/news/how-the-us-patent-mess-affects-european-tech-and-startups>
-
-[4] - Voet, Milan, Trolling the U.S. and EU Patent System: Solved by a Loser-Pays-Attorney-Fees Regime? (May 4, 2018). Available at SSRN: <https://ssrn.com/abstract=3463481>
 
 
 ## Patent Exhaustion
