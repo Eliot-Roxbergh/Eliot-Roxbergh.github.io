@@ -5,7 +5,7 @@
 3. [Patent Clauses in open-source Licenses](#patent-clauses-in-open-source-licenses)
 4. [Remaining Questions](#remaining-questions)
 
-To expand on the earlier article on GPL licensing, I did a read up on patents in open-source software which I present here. I am not a lawyer, this is not legal advice. Feel free to email me any comments or corrections (e@ this domain).\
+To expand on the earlier article on GPL licensing, I did a read up on patents in open-source software which I present here. Feel free to email me any comments or corrections (e@ this domain).\
 _Eliot Roxbergh 2021-06-09_
 
 
@@ -55,18 +55,19 @@ However, if the implicit clause is not recognized, it is entirely possible to us
 
 Firstly, a possible defense is to argue patent exhaustion (regardless of the software license).
 Namely, if a patent holder, sell or otherwise distribute a work covered by their patent, the patent is exhausted. Then it is no longer possible for them to sue for patent infringement for that conveyed work (_however, are there limits to this, does this hold for all possible uses of the work?_).
-This also applies for open source distribution, so that if the work is released as such, they may not sue the users for patent infringement [1].
+This also applies for open source distribution, so that if the work is released as such, they may not sue the users for patent infringement [1,2].
 With patent exhaustion, note that the patent is still in effect and enforceable, however just not when it comes to the distributed work in question.
 
 Taking patent exhaustion further, it usually applies for redistribution.
-For instance, if a company redistribute a large project like Linux, it could be possible that they exhaust all their related patents.
-Another example would be if the company clone a Git repo, make some changes, and then make a pull request with their changes
-(_however, does this count as redistribution which would exhaust any patents applicable for the complete repository, or only for the specific changes made?_).
+This is an important point, since for instance, if a company redistribute a large project like Linux, it should be that they exhaust all their related patents by doing so.
+Moreover, if a company clone a Git repo, make some changes, and then make a pull request.
+Then, this could count as redistribution which would exhaust any patents applicable for the complete repository (at least James Bottomley argues this in his blog [2]).
 For these reasons, patent exhaustion could indeed be why some companies are hesitant to contribute to open-source projects.
-More on patent exhaustion here [1].
+More on patent exhaustion here [1,2].
 
+[1] - <https://lwn.net/Articles/780078/>, <https://archive.fosdem.org/2019/schedule/event/patent_exhaustion/>
 
-[1] - <https://blog.hansenpartnership.com/a-roadmap-for-eliminating-patents-in-open-source/>, <https://lwn.net/Articles/780078/>
+[2] - <https://blog.hansenpartnership.com/a-roadmap-for-eliminating-patents-in-open-source/>
 
 
 ## Patent Clauses in open-source Licenses
@@ -109,7 +110,6 @@ Comment; This article discusses defenses regarding the implicit patent license o
 
 On another note, some licenses also include a so-called _patent retaliation clause_, this penalizes a user (of the software) who would sue a contributor (i.e. author) or another user of the open-source project for patent infringement.
 In which case, the license is terminated and the plaintiff (i.e. the suing party) loses all their rights under the license including any patents granted [7].¹
-<!--- So by suing anyone over the open-source software in question, they (i.e. the plaintiff) lose their related rights, such as to modify or convey the work as well as any patent rights granted.¹ -->
 
 Two examples of licenses that include a patent retaliation clause are Apache and GPLv3.²
 GPLv3 states that you may not impose any restrictions on the rights granted by the license, and if you violate the license, your rights provided by the license are terminated [6].
@@ -178,7 +178,6 @@ Consider that (from my understanding) the software license is a legal contract b
 Therefore, to then license this work without (copyright or patent) rights would undoubtedly be problematic for the licensor, especially if they are doing so knowingly.
 We also see this reflected in the wording of GPLv3, _"A "contributor" is a copyright holder who authorizes use under this License"_.
 
-See also questions posed earlier, under _[Patent Exhaustion](#patent-exhaustion)_.
 
 <!--- Question: What does this mean in GPLv3? "You are not responsible for enforcing compliance by third parties with this License." TODO -->
 ¹ At first I thought the following paragraph could be relevant, _"If you convey a covered work, knowingly relying on a patent license and the Corresponding Source of the work is not available for anyone to copy, free of charge and under the terms of this License [...]"_. However, this is referred to as the _downstream shielding provision_ and not relevant for our question (because as I understand, "relying on" means that you in some way benefit from a patent license). Clarification from Richard Stallman, _"We were already concerned about [..] the possibility that a distributor might receive a patent licence which did not explicitly impose limits on downstream recipients but simply failed to protect them. What if one company pays Microsoft for a patent licence where Microsoft says "Alright, we won't sue you, but we're just not making any promises about your customers if they redistribute it". We had already written a downstream shielding provision into GPL version 3 saying that if you convey the program, and you are benefitting from a patent licence that is not available, that does not extend to the downstream users, then you have to do something to shield them."_ - _<https://fsfe.org/activities/gplv3/tokyo-rms-transcript.en.html>_
