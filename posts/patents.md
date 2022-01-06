@@ -1,13 +1,15 @@
 # Short on Patents
 
-1. [Summary](#summary)
-2. [Patent Exhaustion](#patent-exhaustion)
-3. [Patent Clauses in open-source Licenses](#patent-clauses-in-open-source-licenses)
-4. [Remaining Questions](#remaining-questions)
+1. [Introduction](#introduction)
+2. [Summary](#summary)
+3. [Patent Exhaustion](#patent-exhaustion)
+4. [Patent Clauses in open-source Licenses](#patent-clauses-in-open-source-licenses)
+5. [Remaining Questions](#remaining-questions)
 
 To expand on the earlier article on GPL licensing, I did a read up on patents in open-source software which I present here. Feel free to email me any comments or corrections (e@ this domain).\
 _Eliot Roxbergh 2021-06-09_
 
+# Introduction
 
 Patents, unlike copyright, aims to protect an invention (i.e. an underlying logic) as opposed to a specific implementation (i.e. work).
 In this article, I refer to US law. Where, from what I understand, software patents are more broad and powerful than in the EU.
