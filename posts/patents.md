@@ -5,7 +5,8 @@
 3. [Patent Clauses in open-source Licenses](#patent-clauses-in-open-source-licenses)
 4. [Remaining Questions](#remaining-questions)
 
-To expand on the earlier article on GPL licensing, I did a read up on patents in open-source software which I present here. I am not a lawyer, this is not legal advice. Feel free to email me any comments or corrections (e@ this domain).\
+To expand on the earlier article on GPL licensing, I did a read up on patents in open-source software which I present here.
+Feel free to email me any comments or corrections (e@ this domain).\
 _Eliot Roxbergh 2021-06-09_
 
 
@@ -109,7 +110,6 @@ Comment; This article discusses defenses regarding the implicit patent license o
 
 On another note, some licenses also include a so-called _patent retaliation clause_, this penalizes a user (of the software) who would sue a contributor (i.e. author) or another user of the open-source project for patent infringement.
 In which case, the license is terminated and the plaintiff (i.e. the suing party) loses all their rights under the license including any patents granted [7].¹
-<!--- So by suing anyone over the open-source software in question, they (i.e. the plaintiff) lose their related rights, such as to modify or convey the work as well as any patent rights granted.¹ -->
 
 Two examples of licenses that include a patent retaliation clause are Apache and GPLv3.²
 GPLv3 states that you may not impose any restrictions on the rights granted by the license, and if you violate the license, your rights provided by the license are terminated [6].
