@@ -39,19 +39,25 @@ The issues with software patents are also said to be less severe in the EU [2], 
 
 ## Summary
 
-If a patent holder distributes a work, they should not be able to sue legitimate users for patent infringement: two possible defenses are patent exhaustion and an interpreted patent clause (implicit or explicit) from the software license [1].
-Moreover, patent exhaustion also extends to (re)distribution, which risks limiting the patent's enforceability, and not only for the most obvious cases.
-In other words, the author(s) lose some rights to enforce patents to the benefit of the users when conveying their work open-source (note that this only applies for the work distributed, the patent is still enforceable otherwise).
-So this could then, in some cases, make a company's patents harder to enforce.
-<!--- Additionally, some licenses provide a patent retaliation clause to further discourage legal action against its users from anyone using the software. -->
+It is true that if a patent holder distribute a work, they should not be able to sue legitimate users for patent infringement.
+Two possible defenses are patent exhaustion and an interpreted patent clause (implicit or explicit) from the software license [1].
+Moreover, patent exhaustion could also extend to (re)distribution, which risks limiting the patent's enforceability, even if the patent holder only redisitribute another's work.
+In other words, the patent holder lose some rights to enforce patents to the benefit of the users, for the work conveyed open-source.
+For these reasons, by providing a work open source it could make the patent holder's patents harder to enforce.
 
 <!--- In general, there is no definitive answer, as these questions highly depend on the jurisdiction and earlier case law. -->
-The situation is not as clear-cut or as general as I wanted to believe. Instead, it highly depends on the jurisdiction and the license text in question. 
-Still, if the license provides certain rights, such as to use and modify the software, it would be hard for the author to argue that a patent they hold could then restrict these rights they have specifically granted. Ergo, an implicit patent license can generally be assumed for the agreed use, as stated in the software license. The exact wording in the software license is thus also very important.
+As one could expect, it is not possible to give a complete answer as it depends on, for instance, the jurisdiction and potentially the license text in question. 
+Still, if the license provides certain rights, such as to use and modify the software, it would be hard for the author to argue that a patent they hold could then restrict these rights they have specifically granted.
+That is, an implicit patent license can generally be assumed for the agreed use, as stated in the software license.
+The exact wording in the software license is thus also very important.
 However, as long as the (implicit patent clause) interpretation has not been tested in court, it will not be completely certain.
-This is why some modern licenses (such as GPLv3, discussed later) include a clause that explicitly grants a patent license to the users.
+This is why some modern licenses (such as GPLv3, discussed later) include a clause that explicitly grants a patent license to its users.
 
 <!--- However, if the implicit clause is not recognized, it is entirely possible to use other defenses, such as claiming that the holder exhausted their patent license when distributing the software, as mentioned above. -->
+
+<!--- Additionally, some licenses provide a patent retaliation clause to further discourage legal action against its users from anyone using the software. -->
+
+<!--- TODO would be good with a conclusion here -->
 
 [1] - <https://www.elgaronline.com/view/journals/qmjip/8-3/qmjip.2018.03.03.xml>, <https://www.ipmvs.com/news/the-federal-circuit-defines-implied-licenses-and-examines-exhaustion-doctrine/>
 
