@@ -40,7 +40,7 @@ The issues with software patents are also said to be less severe in the EU [2], 
 ## Summary
 
 It is true that if a patent holder distribute a work, they should not be able to sue legitimate users for patent infringement.
-Two possible defenses are patent exhaustion and an interpreted patent clause (implicit or explicit) from the software license [1].
+The two possible defenses are patent exhaustion and an interpreted patent clause (implicit or explicit) from the software license [1].
 Moreover, patent exhaustion could also extend to (re)distribution, which risks limiting the patent's enforceability, even if the patent holder only redisitribute another's work.
 In other words, the patent holder lose some rights to enforce patents to the benefit of the users, for the work conveyed open-source.
 For these reasons, by providing a work open source it could make the patent holder's patents harder to enforce.
