@@ -187,7 +187,7 @@ furnished to do so"_ [2]
 One aspect I have not considered here, is how a patent suit would play out in practice. For instance, a party should have been able to provide a legitimate defense based on patent exhaustion, but nevertheless be forced into accepting a settlement due to high legal costs. This, to some degree, is a reality since patent trolls do exist, thanks to cases like this.
 
 Another question; if an open-source project infringes on a patent, who is held liable?
-Anyone can in theory be sued (such as the author, distributor, or user), and this in practice largely depends on who has the money [5].
+Anyone can in theory be sued (such as the author, distributor, or user), and this in practice largely depends on who has the money [1].
 However, do some licenses "change" (or make clearer) who is liable for patent infringement?
 For instance, does the patent clause in GPLv3 or Apache make a difference here?
 Reading the GPLv3, I did not find any direct mention of this.¹
@@ -200,4 +200,4 @@ We also see this reflected in the wording of GPLv3, _"A "contributor" is a copyr
 <!--- Question: What does this mean in GPLv3? "You are not responsible for enforcing compliance by third parties with this License." TODO -->
 ¹ At first I thought the following paragraph could be relevant, _"If you convey a covered work, knowingly relying on a patent license and the Corresponding Source of the work is not available for anyone to copy, free of charge and under the terms of this License [...]"_. However, this is referred to as the _downstream shielding provision_ and not relevant for our question (because as I understand, "relying on" means that you in some way benefit from a patent license). Clarification from Richard Stallman, _"We were already concerned about [..] the possibility that a distributor might receive a patent licence which did not explicitly impose limits on downstream recipients but simply failed to protect them. What if one company pays Microsoft for a patent licence where Microsoft says "Alright, we won't sue you, but we're just not making any promises about your customers if they redistribute it". We had already written a downstream shielding provision into GPL version 3 saying that if you convey the program, and you are benefitting from a patent licence that is not available, that does not extend to the downstream users, then you have to do something to shield them."_ - _<https://fsfe.org/activities/gplv3/tokyo-rms-transcript.en.html>_
 
-[5] - <https://ocpatentlawyer.com/everyone-in-the-supply-chain-could-be-sued-for-patent-infringement/>
+[1] - <https://ocpatentlawyer.com/everyone-in-the-supply-chain-could-be-sued-for-patent-infringement/>
