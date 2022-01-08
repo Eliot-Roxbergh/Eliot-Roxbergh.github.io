@@ -179,7 +179,7 @@ furnished to do so"_ [2]
 
 [8] - <https://assets.fenwick.com/legacy/FenwickDocuments/IP_Bulletin_Summer_2006.pdf>
 
-[9] - https://fsfe.org/activities/gplv3/tokyo-rms-transcript.en.html
+[9] - <https://fsfe.org/activities/gplv3/tokyo-rms-transcript.en.html>
 
 
 ## Remaining Questions
