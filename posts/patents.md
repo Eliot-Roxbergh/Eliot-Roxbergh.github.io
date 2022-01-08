@@ -9,7 +9,7 @@
 To expand on the earlier article on GPL licensing, I did a read up on patents in open-source software which I present here. Feel free to email me any comments or corrections (e@ this domain).\
 _Eliot Roxbergh 2021-06-09_
 
-# Introduction
+## Introduction
 
 Patents, unlike copyright, aims to protect an invention (i.e. an underlying logic) as opposed to a specific implementation (i.e. work).
 In this article, I refer to US law. Where, from what I understand, software patents are more broad and powerful than in the EU.
