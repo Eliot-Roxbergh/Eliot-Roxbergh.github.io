@@ -1,4 +1,4 @@
-# Short on Patents
+# Patents and open-source Software
 
 1. [Introduction](#introduction)
 2. [Summary](#summary)
