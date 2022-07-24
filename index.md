@@ -1,9 +1,9 @@
 
 ---
-{% include_relative posts/c_coding.md %}
+{% include_relative posts/intro.md %}
 
 ---
-{% include_relative posts/intro.md %}
+{% include_relative posts/c_coding.md %}
 
 ---
 {% include_relative posts/patents.md %}
