@@ -1,5 +1,8 @@
 
 ---
+{% include_relative posts/intro.md %}
+
+---
 {% include_relative posts/patents.md %}
 
 ---
