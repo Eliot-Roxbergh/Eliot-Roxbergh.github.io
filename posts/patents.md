@@ -44,8 +44,8 @@ Still, it is true that if a patent holder distribute a work, they should not be 
 The two possible defenses are patent exhaustion and an interpreted patent license (implicit or explicit) from the software license [1].
 
 Firstly, the idea behind patent exhaustion, is that the patent holder should not profit more than once for the transfer of a good [2].
-Therefore, distributing a work (including as open source) exhausts the patent.
-So, by providing a work as open source, it makes the patent holder's relevant patents harder to enforce (as someone could then reuse the open source code to circumvent the patents).
+Therefore, distributing a work (including as open source¹) exhausts the patent.
+So, by providing a work as open source, it makes the patent holder's relevant patents harder to enforce (as someone could then reuse the open-source code to circumvent the patents).
 Moreover, patent exhaustion could also extend to (re)distribution, which risks limiting the patent's enforceability, even if the patent holder only redistribute another's work.
 In other words, the patent holder lose some rights to enforce patents to the benefit of the users, for the work conveyed as open-source (regardless if it is theirs or not).
 
@@ -63,6 +63,9 @@ This is why some modern licenses (such as GPLv3, discussed later) include a clau
 
 <!--- TODO would be good with a conclusion here -->
 
+¹ As I use the term here, open-source software must fulfill two requirements: software (1) whose source code is available and (2) whose license allows its users to use, modify and redistribute this code (and binaries, if included). Not to be confused with source-available software, that is, software whose code is available to view but without these additional rights.
+Arguably, open-source software does not need to be free of charge. However, when I write here, I have gratis open-source software in mind. For a quick reference, [Wikipedia](https://en.wikipedia.org/wiki/Open-source_software) on open-source software, _"software that is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software and its source code to anyone and for any purpose [..]  software that is by definition licensed free of charge"_.
+
 [1] - <https://www.elgaronline.com/view/journals/qmjip/8-3/qmjip.2018.03.03.xml>, <https://www.ipmvs.com/news/the-federal-circuit-defines-implied-licenses-and-examines-exhaustion-doctrine/>
 
 [2] - <https://lwn.net/Articles/780078/>, <https://archive.fosdem.org/2019/schedule/event/patent_exhaustion/>
@@ -72,7 +75,7 @@ This is why some modern licenses (such as GPLv3, discussed later) include a clau
 
 A possible defense is to argue patent exhaustion (regardless of the software license).
 Namely, if a patent holder, sell or otherwise distribute a work covered by their patent, the patent is exhausted. Then it is no longer possible for them to sue for patent infringement for that conveyed work.
-This also applies for open source distribution, so that if the work is released as such, they may not sue the users for patent infringement [1][2].
+This also applies for open-source distribution, so that if the work is released as such, they may not sue the users for patent infringement [1][2].
 With patent exhaustion, note that the patent is still in effect and enforceable, however just not when it comes to the distributed work in question.
 <!---  question: are there limits to patent exhaustion, does this hold for all possible uses of the work? -->
 
