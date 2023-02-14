@@ -138,6 +138,11 @@ For more information; the changes are briefly discussed here [5, 7], and in more
 
 ## How is LGPL Weaker than GPL?
 
+The LGPL (Lesser GPL) allows for libraries covered by it to be more easily used, from works covered by other licenses.
+The LGPL(v3) itself refers to the compete GPL(v3) license, but adds a few exceptions when it comes to libraries and is therefore more lenient in these cases.
+In the same way as the GPL, LGPL comes in two versions (v2.1 and v3).
+
+
 Your work gets contaminated by LGPL if it is "based on the library", e.g., if your work directly includes LGPL code or if your work cannot function without the LGPL parts (either on its own or by replacing the LGPL work).
 However, the LGPL is referred to as weak copyleft since much can be accomplished while "combined" with non-copyleft code, which then falls under "works that use the library". [1]
 
