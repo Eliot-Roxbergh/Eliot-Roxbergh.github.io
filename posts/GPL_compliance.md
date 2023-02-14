@@ -1,7 +1,7 @@
 
 # GPL Compliance
 
-1. [GPL Main Points](#gpl-main-points)
+1. [GPL According to the FSF](#gpl-according-to-the-fsf)
 2. [(L)GPLv2 vs (L)GPLv3](#lgplv2-vs-lgplv3)
 3. [How is LGPL Weaker than GPL?](#how-is-lgpl-weaker-than-gpl)
 4. [Static vs Dynamic Linking (GPL)](#static-vs-dynamic-linking-gpl)
@@ -15,11 +15,11 @@ _Eliot Roxbergh 2021-01-27_
 [1] - <https://copyleft.org/guide/>
 
 Addendum; I use the term _GPL contamination_, referring to situations where using a GPL work incorrectly would legally require you to release your work under the GPL license as well (or stop using GPL work in a fashion that is not allowed).
-However, one could argue that GPL contamination is too negative wording, as it only refers to the fact that if you use a GPL work beyond what is expressly allowed in the license, you are in breach of contract and could be held liable - but in this situation, you may instead license your work under the GPL and accept to be "contaminated".
+However, one could argue that GPL contamination is a too negative wording, as it only refers to the fact that if you use a GPL work beyond what is expressly allowed in the license, you are in breach of contract and could be held liable - but in this situation, you may instead license your work under the GPL and accept to be "contaminated".
 
-## GPL Main Points
+## GPL According to the FSF
 
-In the following paragraph, I try to summarize how the FSF (/the GNU Foundation) themselves interpret the GPL license. However, as I mention later in the section on [GPL Linking](#static-vs-dynamic-linking-gpl), most seem to argue that you can go further - for instance, to dynamically link against a GPL program, regardless how it is used, and still not be contamined (i.e. without being forced to release your work under the GPL or risk getting sued). However, the FSF disagrees.
+Note; In the following paragraph, I try to summarize how the FSF (/the GNU Foundation) themselves interpret the GPL license. However, as I later mention in the section on [GPL Linking](#static-vs-dynamic-linking-gpl), most seem to argue that you can go further - for instance, to dynamically link against a GPL program, regardless how it is used, and still not be contamined.¹
 
 To be sure that your work is not contaminated by the GPL, according to the FSF, the following should apply;
 The work should be an aggregate (as per the GPL license), meaning that it is separate and independent from the GPL licensed program.
@@ -39,6 +39,7 @@ Comment, in the case that the work is only conveyed in source code, and not in a
 
 Side note, LGPLv3 incorporates the full GPLv3 license and is therefore equivalent in many areas.
 
+¹ _"Contamination" is often used in this context, which means that your work will be under the GPL license due to how it interacts with a GPL-licensed work. Thus you are forced to release your work under the GPL as well or risk getting sued (for breach of contract and/or for copyright infringement [10])._
 
 [1] - <https://www.gnu.org/licenses/gpl-faq.html#NFUseGPLPlugins>
 
@@ -81,6 +82,8 @@ Side note, LGPLv3 incorporates the full GPLv3 license and is therefore equivalen
 [8] - <https://opensource.stackexchange.com/questions/2688/do-you-violate-the-gpl-if-you-provide-source-code-that-cannot-be-compiled>
 
 [9] - <https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL>
+
+[10] - https://perens.com/2017/05/28/understanding-the-gpl-is-a-contract-court-case/
 
 _Additional discussion, not referred to in this article:_
 > https://softwareengineering.stackexchange.com/questions/50118/avoid-gpl-violation-by-moving-library-out-of-process \
