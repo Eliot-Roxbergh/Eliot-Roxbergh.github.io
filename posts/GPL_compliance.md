@@ -169,12 +169,12 @@ However, by choosing GPL with the Classpath exception in favor of LGPL, you are 
 
 In this section I use the term GPL for referring to both GPLv2 and GPLv3, as they should be similar when it comes to linking.
 
-To summarize; From a legal perspective, it is safer to use dynamic linking over static linking, as the risk of contamination is lower.¹ Dynamic linking is generally considered to be OK by lawyers, or at least, it should be allowed if it can be shown that the program in-fact functions and provides value even without the GPL work. Still, it is impossible to say conclusively without considering specific jurisdictions and recent cases regarding GPL compliance.
+To summarize; From a legal perspective, it is safer to use dynamic linking over static linking, as the risk of contamination is lower.¹ Dynamic linking is generally considered to be within the law according to legal experts, or at least, it should be allowed if it can be shown that the program in-fact functions and provides value even without the GPL work. Still, it is impossible to say conclusively without considering specific jurisdictions and recent cases regarding GPL compliance.
 
 FSF describes that it is not in any way allowed for a proprietary program to directly link (dynamically or statically) to a program licensed under GPL [1] (as described earlier, they need to communicate "at arms length").
 However, it has been claimed that it is acceptable to dynamically link to GPL code. Especially if the proprietary work is separate from the GPL work and does not depend on it.
 Ergo, the proprietary work should be able to utilize components other than the GPL-affected ones and still function (additionally, it should not be a derivative work of the GPL project). [2,4]
-Indeed, this is contrary to what FSF writes [1]. However, just because the FSF argues that the GPL should cover dynamic linking, does not necessarily make it so in practise. From what I have read, dynamically linking GPL code is most often interpreted as to be allowed in US [2,6], English [4], and EU [3,5] law. While statically linking is seen as not allowed or uncertain. Statically linking should be the same as including the code directly [4].
+Indeed, this is contrary to what FSF writes [1]. However, just because the FSF argues that the GPL should cover dynamic linking, does not necessarily make it so in practise [4]. From what I have read, dynamically linking GPL code is most often interpreted as to be allowed in US [2,6], English [4], and EU [3,5] law. While statically linking is often seen as not allowed or uncertain. Statically linking should be the same as including the code directly [4].
 
 
 
