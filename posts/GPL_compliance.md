@@ -105,7 +105,7 @@ For more information; the changes are briefly discussed here [5, 7], and in more
 
 ¹ _Together with the explicit mention of patents in GPLv3, so called patent retaliation is also included [9] [10]._
 
-² _For more information on software patents, including in GPLv3, see my later post [Patents and open-source Software](https://r0x.se/#patents-and-open-source-software)_
+² _For more information on software patents, including in GPLv3, see my later post [Patents and open-source Software](https://r0x.se/#patents-and-open-source-software)._
 
 [1] - <https://www.qt.io/licensing/open-source-lgpl-obligations>
 
@@ -178,7 +178,7 @@ This was also discussed in an LWN article, regarding a presentation by Armijn He
 
 For additional reading, I refer to [Practical GPL[v2] Compliance](https://www.linuxfoundation.org/resources/publications/practical-gpl-compliance) and [GPL - the Linking Debate](https://web.archive.org/web/20130514013222/https://moorcrofts.com/documents/GPL%20-%20the%20Linking%20Debate.pdf).
 
-¹ Dynamic linking is always safer, regardless if the license is (L)GPLv2 or v3.
+¹ _Dynamic linking is always safer than static linking, regardless if the license is (L)GPLv2 or v3._
 
 [1] - <https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL> (included below)
 
@@ -202,18 +202,19 @@ GPLv3 (and a similar clause in GPLv2) states that _"you may not impose any furth
 Therefore, one needs to be careful when claiming a license is compatible with GPL, possibly even if the license is listed as compatible by the FSF [p. 160, 1].
 It is due to this clause, that GPLv3 code cannot be included in Apache projects, while the opposite (i.e. Apache code in GPLv3 projects) is allowed [4].
 
-Comment: GPLv2 and GPLv3 are not compatible. However, as it should be explicitly stated that _"GPL version 2 or any later version"_ can be used, the user or developer can decide which version to follow. As far as I understand, this has nothing to do with license compatibility but rather a type of multi-licensing.
+Comment; GPLv2 and GPLv3 are not compatible. However, as it should be explicitly stated that _"GPL version 2 or any later version"_ can be used, the user or developer can decide which version to follow. As far as I understand, this has nothing to do with license compatibility but rather a type of multi-licensing.
 
 #### License Compatibility - Example of Use:
 
 First, if there are multiple contributors (i.e. copyright holders) to a project, _all_ must agree if you are to change license (e.g., by signing a CLA beforehand).
-However, there is an exception. Namely, you are always allowed to switch to a compatible license [2] (details are described here: [3]).
+However, there is an exception. Namely, you are always allowed to switch to a compatible license [2]¹.
 Of course, the old license still applies to the software at that earlier point.
 
 Second, when multiple compatible projects are merged, all licenses still apply to their respective parts.
 However, if you wish, the combined program can be seen as licensed under only the most stringent license present - assuming they are compatible.
 For instance, GPLv3 and Apache 2.0 are compatible (in one direction [4]), and together a combined work under these licenses could be seen as the strong copyleft GPLv3 [3].
 
+¹ _Details regarding compatible licenses are described here [3]._
 
 [1] - Andrew M. ST. Laurent (2004), Understanding Open Source and Free Software Licensing, ISBN 978-0596005818
 
@@ -221,7 +222,7 @@ For instance, GPLv3 and Apache 2.0 are compatible (in one direction [4]), and to
 
 [3] - <https://www.gnu.org/licenses/license-compatibility.html>
 
-[4] - <https://www.apache.org/licenses/GPL-compatibility.html>
+[4] - <https://www.apache.org/licenses/GPL-compatibility.html> (included below)
 >  "Apache 2 software can therefore be included in GPLv3 projects, because the GPLv3 license accepts our software into GPLv3 works.
 >  However, GPLv3 software cannot be included in Apache projects.
 >  The licenses are incompatible in one direction only,
