@@ -103,9 +103,9 @@ In general, the (L)GPLv3 license was also internationalized, avoiding US-specifi
 
 For more information; the changes are briefly discussed here [5, 7], and in more detail here [8].
 
-¹ _Together with the explicit mention of patents in GPLv3, so called patent retaliation is also included [9] [10]._
+¹ _Together with the explicit mention of patents, so called patent retaliation is also included in GPLv3 [9] [10]._
 
-² _For more information on software patents, including in GPLv3, see my later post [Patents and open-source Software](https://r0x.se/#patents-and-open-source-software)._
+² **_For more information on software patents, including for GPLv3, see my later post [Patents and open-source Software](https://r0x.se/#patents-and-open-source-software)._**
 
 [1] - <https://www.qt.io/licensing/open-source-lgpl-obligations>
 
