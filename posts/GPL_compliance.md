@@ -19,12 +19,15 @@ However, one could argue that GPL contamination is too negative wording, as it o
 
 ## GPL Main Points
 
-In the following paragraph, I try to summarize how the GNU Foundation themselves interpret the GPL license. However, as I mention later in the section on [GPL Linking](#static-vs-dynamic-linking-gpl), some argue that you can go further - e.g. to (in certain cases) dynamically link against a GPL program - and still not be contamined (i.e. without being forced to release your work under the GPL or risk getting sued).
+In the following paragraph, I try to summarize how the FSF (/the GNU Foundation) themselves interpret the GPL license. However, as I mention later in the section on [GPL Linking](#static-vs-dynamic-linking-gpl), most seem to argue that you can go further - for instance, to dynamically link against a GPL program, regardless how it is used, and still not be contamined (i.e. without being forced to release your work under the GPL or risk getting sued). However, the FSF disagrees.
 
-So to be sure that your work is not contaminated by the GPL, the following should apply;
-The work should be an aggregate (as per the GPL license), meaning that it is separate and independent from the GPL licensed program. Therefore, the work should be able to function on its own, and any GPL components easily exchanged.
-For instance, it is allowed to use a GPL-covered plug-in as long as it DOES NOT form a single combined program with the work. So, you are allowed to use fork and exec to run the external GPL binary. [1]
-The term used is that both works should communicate "at arms length" [2]. At a minimum, the programs should run as separate processes and communicate over an IPC mechanism like pipes. They cannot directly share any data structures. [3]
+To be sure that your work is not contaminated by the GPL, according to the FSF, the following should apply;
+The work should be an aggregate (as per the GPL license), meaning that it is separate and independent from the GPL licensed program.
+Therefore, the work should be able to function on its own, and any GPL components easily exchanged.
+The FSF states, that _"you cannot incorporate GPL-covered software in a proprietary system"_ [2] and that a proprietary work cannot link to a GPL work (_"because the program actually links to the library [..] the terms of the GPL apply to the entire combination"_) [9].
+On the other hand, they describe that it is allowed to use a plug-in with a larger work (one of which being covered by GPL) as long as they do not form a single combined program. Specifically, you are allowed to use fork and exec to run the plug-in. [1]
+The term used is that both works should communicate "at arms length" [2].
+At a minimum, the programs should run as separate processes and communicate over an IPC mechanism like pipes. They cannot directly share any data structures. [3]
 
 The GPL does not apply if the project is only used privately or internally within a company, and not distributed to anyone else [4].
 
@@ -35,7 +38,6 @@ For libraries covered by LGPL it is also required to enable the users to relink 
 Comment, in the case that the work is only conveyed in source code, and not in any non-source format, you are not required to provide installation instructions as stated in the GPL licenses (also discussed here [8]).
 
 Side note, LGPLv3 incorporates the full GPLv3 license and is therefore equivalent in many areas.
-
 
 
 [1] - <https://www.gnu.org/licenses/gpl-faq.html#NFUseGPLPlugins>
@@ -78,8 +80,10 @@ Side note, LGPLv3 incorporates the full GPLv3 license and is therefore equivalen
 
 [8] - <https://opensource.stackexchange.com/questions/2688/do-you-violate-the-gpl-if-you-provide-source-code-that-cannot-be-compiled>
 
-> Additional discussion\
-https://softwareengineering.stackexchange.com/questions/50118/avoid-gpl-violation-by-moving-library-out-of-process \
+[9] - <https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL>
+
+_Additional discussion, not referred to in this article:_
+> https://softwareengineering.stackexchange.com/questions/50118/avoid-gpl-violation-by-moving-library-out-of-process \
 https://softwareengineering.stackexchange.com/questions/367844/can-i-include-a-gpl-v3-binary-with-my-proprietary-application-if-i-prompt-the-us/367850#367850 \
 https://softwareengineering.stackexchange.com/questions/102778/is-running-an-executable-as-a-child-process-the-same-as-linking-a-library \
 https://opensource.stackexchange.com/questions/5447/to-which-extent-gpl-license-contaminates-my-project
@@ -92,10 +96,9 @@ GPLv3 and LGPLv3 are generally stricter than GPLv2 and LGPLv2.1, respectively.
 
 The main differences between the versions are the following;
 
-
 1. The added tivoization clause states that if you distribute user products (i.e. actual hardware products), you need to allow modification of the work covered under (L)GPLv3 on these devices [1,2]. That is, the manufacturer is not allowed to restrict modification of (L)GPLv3 software running on their products, as otherwise often done with different DRM mechanisms [5,7].
 2. Unlike the predecessors, (L)GPLv3 provides an explicit clause that work distributed in a non-source format need to include installation instructions together with the source code. This is assumably stronger than LGPLv2.1 and GPLv2, which had a similar but much shorter mention of this. Although, I am not sure what this means in practice.
-3. Similar with patents - (L)GPLv3 provides an explicit patent clause¹ [4], also described in [1,4,5]. While GPLv2 and LGPLv2.1 only give an "implicit patent license" [5].
+3. Similarly with patents - (L)GPLv3 provides an explicit patent clause¹ [4], also described in [1,4,5]. While GPLv2 and LGPLv2.1 only give an "implicit patent license" [5].
 As a result of this, the Apache license should be compatible with GPLv3 (while incompatible with GPLv2) [6], but more on this later.²
 
 
@@ -164,12 +167,17 @@ However, by choosing GPL with the Classpath exception in favor of LGPL, you are 
 
 ## Static vs. Dynamic Linking (GPL)
 
-From a legal perspective, it is generally safer to use dynamic over static linking, as the risk of contamination is lower.¹
+In this section I use the term GPL for referring to both GPLv2 and GPLv3, as they should be similar when it comes to linking.
 
-FSF describes that it is not in any way allowed for a proprietary program to directly link to a program licensed under GPL [1] (as described earlier, they need to communicate "at arms length").
-However, it has been claimed that (in some jurisdictions) it is acceptable to dynamically link to GPL code, assuming that the proprietary work is separate from the GPL work and does not depend on it.
-Ergo, the proprietary work should be able to utilize components other than the GPL-affected ones and still function (additionally, it should not be a derivative work of the GPL project). [2]
-There seems to be no simple answer for this question, as these statements seem contradictory to what FSF writes [1], proceed with caution.
+To summarize; From a legal perspective, it is safer to use dynamic linking over static linking, as the risk of contamination is lower.¹ Dynamic linking is generally considered to be OK by lawyers, or at least, it should be allowed if it can be shown that the program in-fact functions and provides value even without the GPL work. Still, it is impossible to say conclusively without considering specific jurisdictions and recent cases regarding GPL compliance.
+
+FSF describes that it is not in any way allowed for a proprietary program to directly link (dynamically or statically) to a program licensed under GPL [1] (as described earlier, they need to communicate "at arms length").
+However, it has been claimed that it is acceptable to dynamically link to GPL code. Especially if the proprietary work is separate from the GPL work and does not depend on it.
+Ergo, the proprietary work should be able to utilize components other than the GPL-affected ones and still function (additionally, it should not be a derivative work of the GPL project). [2,4]
+Indeed, this is contrary to what FSF writes [1]. However, just because the FSF argues that the GPL should cover dynamic linking, does not necessarily make it so in practise. From what I have read, dynamically linking GPL code is most often interpreted as to be allowed in US [2,6], English [4], and EU [3,5] law. While statically linking is seen as not allowed or uncertain. Statically linking should be the same as including the code directly [4].
+
+
+
 
 This was also discussed in an LWN article, regarding a presentation by Armijn Hemel, which states; _"The key point is that the build-time and run-time environments may be different [...].
  This is important because, in his opinion, dynamic linking moves questions about derivative works and the application of the GPL license into run time, because it is only at run time that libraries are linked with a program.
@@ -178,6 +186,8 @@ This was also discussed in an LWN article, regarding a presentation by Armijn He
 
 For additional reading, I refer to [Practical GPL[v2] Compliance](https://www.linuxfoundation.org/resources/publications/practical-gpl-compliance) and [GPL - the Linking Debate](https://web.archive.org/web/20130514013222/https://moorcrofts.com/documents/GPL%20-%20the%20Linking%20Debate.pdf).
 
+Additional reading for another perspective, _"In short, the debate over static and dynamic linking simply misses the mark"_ [6].
+
 ¹ _Dynamic linking is always safer than static linking, regardless if the license is (L)GPLv2 or v3._
 
 [1] - <https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL> (included below)
@@ -185,10 +195,17 @@ For additional reading, I refer to [Practical GPL[v2] Compliance](https://www.li
 > "Yes, because the program actually links to the library. As such, the terms of the GPL apply to the entire combination.
        The software modules that link with the library may be under various GPL compatible licenses, but the work as a whole must be licensed under the GPL"
 
-[2] - <http://mediatechlaw.mstreetlegal.com/2014/04/25/open-source-dynamic-linking-and-licensing-consideration-for-developers/>
+[2] - <http://mediatechlaw.mstreetlegal.com/2014/04/25/open-source-dynamic-linking-and-licensing-consideration-for-developers/> (GPLv3, US law)
 
-[3] - <https://lwn.net/Articles/548216/>
+[3] - <https://lwn.net/Articles/548216/> (EU law?)
 
+[4] - <https://web.archive.org/web/20130514013222/https://moorcrofts.com/documents/GPL%20-%20the%20Linking%20Debate.pdf> (GPLV2, English law)
+
+[5] - <https://www.linuxfoundation.org/resources/publications/practical-gpl-compliance> (GPLv2, EU law?)
+
+[6] - <https://web.archive.org/web/20110514024547/https://www.law.washington.edu/lta/swp/law/derivative.html/> (GPLv2, US law)
+
+[7] - <https://www.qt.io/licensing/open-source-lgpl-obligations> (LGPLv3)
 
 ## What is License Compatibility?
 
