@@ -22,7 +22,7 @@ However, one could argue that GPL contamination is too negative wording, as it o
 In the following paragraph, I try to summarize how the GNU Foundation themselves interpret the GPL license. However, as I mention later in the section on [GPL Linking](#static-vs-dynamic-linking-gpl), some argue that you can go further - e.g. to (in certain cases) dynamically link against a GPL program - and still not be contamined (i.e. without being forced to release your work under the GPL or risk getting sued).
 
 So to be sure that your work is not contaminated by the GPL, the following should apply;
-The work should be an aggregate (as per GPL license), meaning that it is separate and independent from the GPL licensed program. Therefore, the work should be able to function on its own, and any GPL components easily exchanged.
+The work should be an aggregate (as per the GPL license), meaning that it is separate and independent from the GPL licensed program. Therefore, the work should be able to function on its own, and any GPL components easily exchanged.
 For instance, it is allowed to use a GPL-covered plug-in as long as it DOES NOT form a single combined program with the work. So, you are allowed to use fork and exec to run the external GPL binary. [1]
 The term used is that both works should communicate "at arms length" [2]. At a minimum, the programs should run as separate processes and communicate over an IPC mechanism like pipes. They cannot directly share any data structures. [3]
 
@@ -90,14 +90,22 @@ https://opensource.stackexchange.com/questions/5447/to-which-extent-gpl-license-
 
 GPLv3 and LGPLv3 are generally stricter than GPLv2 and LGPLv2.1, respectively.
 
-1. The tivoization clause states that if you distribute user products (i.e. actual hardware products), you need to allow modification of the work covered under (L)GPLv3 on these devices [1,2].
-2. Unlike their predecessors, (L)GPLv3 provides an explicit clause that work distributed in a non-source format need to include installation instructions together with the source code. This is assumably stronger than LGPLv2.1 and GPLv2, which had a similar but much shorter mention of this. Although, I am not sure what this means in practice.
-3. Similar with patents - (L)GPLv3 provide an explicit patent clause [4], also described in [1,4,5]. While GPLv2 and LGPLv2.1 only give an "implicit patent license" [5].
-As a result of this, as I understand, the Apache license is incompatible with GPLv2 but is compatible with GPLv3 [6].
-
-Read more here [5, 7], and the changes more in detail [8].
+The main differences between the versions are the following;
 
 
+1. The added tivoization clause states that if you distribute user products (i.e. actual hardware products), you need to allow modification of the work covered under (L)GPLv3 on these devices [1,2]. That is, the manufacturer is not allowed to restrict modification of (L)GPLv3 software running on their products, as otherwise often done with different DRM mechanisms [5,7].
+2. Unlike the predecessors, (L)GPLv3 provides an explicit clause that work distributed in a non-source format need to include installation instructions together with the source code. This is assumably stronger than LGPLv2.1 and GPLv2, which had a similar but much shorter mention of this. Although, I am not sure what this means in practice.
+3. Similar with patents - (L)GPLv3 provides an explicit patent clause¹ [4], also described in [1,4,5]. While GPLv2 and LGPLv2.1 only give an "implicit patent license" [5].
+As a result of this, the Apache license should be compatible with GPLv3 (while incompatible with GPLv2) [6], but more on this later.²
+
+
+In general, the (L)GPLv3 license was also internationalized, avoiding US-specific terminology [5,8].
+
+For more information; the changes are briefly discussed here [5, 7], and in more detail here [8].
+
+¹ _Together with the explicit mention of patents in GPLv3, so called patent retaliation is also included [9] [10]._
+
+² _For more information on software patents, including in GPLv3, see my later post [Patents and open-source Software](https://r0x.se/#patents-and-open-source-software)_
 
 [1] - <https://www.qt.io/licensing/open-source-lgpl-obligations>
 
@@ -117,17 +125,21 @@ Read more here [5, 7], and the changes more in detail [8].
       
 [7] - <https://www.gnu.org/licenses/rms-why-gplv3.html>
 
-[8] - <https://www.ipa.go.jp/files/000028295.pdf> (Eben Moglen, GPL3: Process and Product, 21 December 2007)
+[8] - <https://web.archive.org/web/20181223234838/https://www.ipa.go.jp/files/000028295.pdf> (Eben Moglen, GPL3: Process and Product, 21 December 2007)
+
+[9] - <https://fsfe.org/activities/gplv3/patents-and-gplv3.en.html#Compatibility-with-broader-retaliation>
+
+[10] - <https://www.gnu.org/licenses/gpl-faq.html#v3PatentRetaliation>
 
 ## How is LGPL Weaker than GPL?
 
 Your work gets contaminated by LGPL if it is "based on the library", e.g., if your work directly includes LGPL code or if your work cannot function without the LGPL parts (either on its own or by replacing the LGPL work).
 However, the LGPL is referred to as weak copyleft since much can be accomplished while "combined" with non-copyleft code, which then falls under "works that use the library". [1]
 
-In this latter case, your work is not contaminated even if you link against an LGPL licensed library. Although, the following applies;
-You may dynamically link against LGPL licensed libraries without disclosing your work. However, if you provide the LGPL library (dynamically linked), you also need to provide its source.
-On the other hand, if you statically link, you need to provide information to enable users to relink the software. This might, for instance, be the object files of your work. [2]
-Statically linking can easier be seen as "based on the library", and it could therefore be safer to dynamically link when possible (or relicense under LGPL) [3].
+In this latter case, your work is not contaminated even if you link against an LGPL licensed library. The following applies;
+You may dynamically link against LGPL licensed libraries without disclosing your work. However, if you provide the LGPL library (dynamically linked), you need to provide its source.
+On the other hand, if you statically link, you also need to provide information to enable users to relink the software. This might, for instance, be the object files of your work. [2] Statically linking can easier be seen as "based on the library", and it is therefore safer to dynamically link when possible [3].
+
  
 Comment; Instead of licensing your work under the LGPL, it is also technically possible to license under the GPL while explicitly allowing linking (i.e. a _GPL linking exception_) [4]. An example of this is the so-called _Classpath exception_, as used in the GNU Classpath Java library [5].
 However, by choosing GPL with the Classpath exception in favor of LGPL, you are forgoing the few requirements (described just above) that other works linking against your work have.
@@ -152,18 +164,21 @@ However, by choosing GPL with the Classpath exception in favor of LGPL, you are 
 
 ## Static vs. Dynamic Linking (GPL)
 
-From a legal perspective, it is generally safer to use dynamic over static linking, which means that the risk of contamination is also lower.
+From a legal perspective, it is generally safer to use dynamic over static linking, as the risk of contamination is lower.¹
 
 FSF describes that it is not in any way allowed for a proprietary program to directly link to a program licensed under GPL [1] (as described earlier, they need to communicate "at arms length").
 However, it has been claimed that (in some jurisdictions) it is acceptable to dynamically link to GPL code, assuming that the proprietary work is separate from the GPL work and does not depend on it.
-Ergo, the proprietary work should be able to utilize components other than the GPL-affected ones and still function (additionally, it should not be derivative work of the GPL project). [2]
+Ergo, the proprietary work should be able to utilize components other than the GPL-affected ones and still function (additionally, it should not be a derivative work of the GPL project). [2]
 There seems to be no simple answer for this question, as these statements seem contradictory to what FSF writes [1], proceed with caution.
 
-This was also discussed in an LWN article, which states; _"The key point is that the build-time and run-time environments may be different [...].
+This was also discussed in an LWN article, regarding a presentation by Armijn Hemel, which states; _"The key point is that the build-time and run-time environments may be different [...].
  This is important because, in his opinion, dynamic linking moves questions about derivative works and the application of the GPL license into run time, because it is only at run time that libraries are linked with a program.
  The dynamically linked libraries that are used at run time could indeed be different—and have different licenses—from the libraries that were specified during the static linking phase.
  This implies that (depending who you ask) declaring the wrong dependencies in a binary could trigger license compliance issues."_ [3]
 
+For additional reading, I refer to [Practical GPL[v2] Compliance](https://www.linuxfoundation.org/resources/publications/practical-gpl-compliance) and [GPL - the Linking Debate](https://web.archive.org/web/20130514013222/https://moorcrofts.com/documents/GPL%20-%20the%20Linking%20Debate.pdf).
+
+¹ Dynamic linking is always safer, regardless if the license is (L)GPLv2 or v3.
 
 [1] - <https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL> (included below)
 
@@ -177,24 +192,27 @@ This was also discussed in an LWN article, which states; _"The key point is that
 
 ## What is License Compatibility?
 
-In general, license compatibility refers to the fact that you can combine multiple programs of different licenses (which you do not hold the copyright for) as long as you adhere to the license.
+In general, license compatibility refers to the fact that you can combine multiple programs of different licenses (which you do not hold the copyright for) as long as you adhere to the licenses.
 For instance, you may take a BSD and an MIT licensed program and combine them into one proprietary program.
 You may then release this work under a proprietary license and impose any additional restrictions.
-However, you must still fulfill all the requirements of the licenses, which in this example at least requires the inclusion of the original copyright notices.
+However, you must still fulfill all the requirements of the licenses, which in this example requires the inclusion of both original copyright notices.
 Far from every license is compatible, as each obligation in the licenses must be fully followed. [p. 161, 1]
 
 GPLv3 (and a similar clause in GPLv2) states that _"you may not impose any further restrictions on the exercise of the rights granted or affirmed"_, which limits its compatibility with other licenses.
 Therefore, one needs to be careful when claiming a license is compatible with GPL, possibly even if the license is listed as compatible by the FSF [p. 160, 1].
+It is due to this clause, that GPLv3 code cannot be included in Apache projects, while the opposite (i.e. Apache code in GPLv3 projects) is allowed [4].
+
+Comment: GPLv2 and GPLv3 are not compatible. However, as it should be explicitly stated that _"GPL version 2 or any later version"_ can be used, the user or developer can decide which version to follow. As far as I understand, this has nothing to do with license compatibility but rather a type of multi-licensing.
 
 #### License Compatibility - Example of Use:
 
-First, if there are multiple contributors (copyright holders) to a project _all_ must agree if you are to change license (e.g., by signing a CLA beforehand).
+First, if there are multiple contributors (i.e. copyright holders) to a project, _all_ must agree if you are to change license (e.g., by signing a CLA beforehand).
 However, there is an exception. Namely, you are always allowed to switch to a compatible license [2] (details are described here: [3]).
 Of course, the old license still applies to the software at that earlier point.
 
 Second, when multiple compatible projects are merged, all licenses still apply to their respective parts.
-However, if you wish, the combined program can be _seen_ as licensed under the most stringent license present - assuming they are compatible.
-For instance, GPLv3 and Apache 2.0 are compatible, and together a combined work under these licenses could be seen as the strong copyleft GPLv3 [3].
+However, if you wish, the combined program can be seen as licensed under only the most stringent license present - assuming they are compatible.
+For instance, GPLv3 and Apache 2.0 are compatible (in one direction [4]), and together a combined work under these licenses could be seen as the strong copyleft GPLv3 [3].
 
 
 [1] - Andrew M. ST. Laurent (2004), Understanding Open Source and Free Software Licensing, ISBN 978-0596005818
@@ -203,3 +221,8 @@ For instance, GPLv3 and Apache 2.0 are compatible, and together a combined work 
 
 [3] - <https://www.gnu.org/licenses/license-compatibility.html>
 
+[4] - <https://www.apache.org/licenses/GPL-compatibility.html>
+>  "Apache 2 software can therefore be included in GPLv3 projects, because the GPLv3 license accepts our software into GPLv3 works.
+>  However, GPLv3 software cannot be included in Apache projects.
+>  The licenses are incompatible in one direction only,
+>  and it is a result of ASF's licensing philosophy and the GPLv3 authors' interpretation of copyright law."
