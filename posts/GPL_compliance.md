@@ -102,8 +102,7 @@ The main differences between the versions are the following;
 As a result of this, the Apache license should be compatible with GPLv3 (while incompatible with GPLv2) [6], but more on this later.²
 
 
-In general, the (L)GPLv3 license was also internationalized, avoiding US-specific terminology [5,8].
-
+In general, the (L)GPLv3 license was also internationalized, avoiding US-specific terminology [5,8]. \
 For more information; the changes are briefly discussed here [5, 7], and in more detail here [8].
 
 ¹ _Together with the explicit mention of patents, so called patent retaliation is also included in GPLv3 [9] [10]._
@@ -169,26 +168,25 @@ However, by choosing GPL with the Classpath exception in favor of LGPL, you are 
 
 In this section I use the term GPL for referring to both GPLv2 and GPLv3, as they should be similar when it comes to linking.
 
-To summarize; From a legal perspective, it is safer to use dynamic linking over static linking, as the risk of contamination is lower.¹ Dynamic linking is generally considered to be within the law according to legal experts, or at least, it should be allowed if it can be shown that the program in-fact functions and provides value even without the GPL work. Still, it is impossible to say conclusively without considering specific jurisdictions and recent cases regarding GPL compliance.
+To summarize; From a legal perspective, it is safer to use dynamic linking over static linking, as the risk of contamination is lower.¹ Dynamic linking is generally considered to be within the law according to legal experts, or at least, it should be allowed if it can be shown that the program in-fact functions and provides value even without the GPL work. Still, it is impossible to say conclusively without considering specific jurisdictions and for instance recent cases regarding GPL compliance.
 
-FSF describes that it is not in any way allowed for a proprietary program to directly link (dynamically or statically) to a program licensed under GPL [1] (as described earlier, they need to communicate "at arms length").
-However, it has been claimed that it is acceptable to dynamically link to GPL code. Especially if the proprietary work is separate from the GPL work and does not depend on it.
+FSF describes that it is not allowed for a proprietary program to directly link (dynamically or statically) to a library licensed under GPL [1] (as described earlier, they need to communicate "at arms length"). 
+However, legal experts often claim that it is acceptable to dynamically link to a GPL work. Especially if the proprietary work is separate from the GPL work and does not depend on it.
 Ergo, the proprietary work should be able to utilize components other than the GPL-affected ones and still function (additionally, it should not be a derivative work of the GPL project). [2,4]
-Indeed, this is contrary to what FSF writes [1]. However, just because the FSF argues that the GPL should cover dynamic linking, does not necessarily make it so in practise [4]. From what I have read, dynamically linking GPL code is most often interpreted as to be allowed in US [2,6], English [4], and EU [3,5] law. While statically linking is often seen as not allowed or uncertain. Statically linking should be the same as including the code directly [4].
+Indeed, this is contrary to what the FSF writes [1]. Still, just because the FSF argues that the GPL should cover dynamic linking, does not necessarily make it so in practise [4]. From what I have read, dynamically linking GPL code is most often interpreted as to be allowed in US [2,6], English [4], and EU [3,5] law. While statically linking is often seen as not allowed or uncertain. According to one source, statically linking should be the same as including the code directly [4].
 
+¹ _Dynamic linking is always safer than static linking, regardless if the license is (L)GPLv2 or v3._
 
-
+**Additional reading;**
 
 This was also discussed in an LWN article, regarding a presentation by Armijn Hemel, which states; _"The key point is that the build-time and run-time environments may be different [...].
  This is important because, in his opinion, dynamic linking moves questions about derivative works and the application of the GPL license into run time, because it is only at run time that libraries are linked with a program.
  The dynamically linked libraries that are used at run time could indeed be different—and have different licenses—from the libraries that were specified during the static linking phase.
  This implies that (depending who you ask) declaring the wrong dependencies in a binary could trigger license compliance issues."_ [3]
 
-For additional reading, I refer to [Practical GPL[v2] Compliance](https://www.linuxfoundation.org/resources/publications/practical-gpl-compliance) and [GPL - the Linking Debate](https://web.archive.org/web/20130514013222/https://moorcrofts.com/documents/GPL%20-%20the%20Linking%20Debate.pdf).
+For an introduction to linking and GPL I refer to [4].
+And for another perspective, _"In short, the debate over static and dynamic linking simply misses the mark"_, see [6].
 
-Additional reading for another perspective, _"In short, the debate over static and dynamic linking simply misses the mark"_ [6].
-
-¹ _Dynamic linking is always safer than static linking, regardless if the license is (L)GPLv2 or v3._
 
 [1] - <https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL> (included below)
 
@@ -206,6 +204,10 @@ Additional reading for another perspective, _"In short, the debate over static a
 [6] - <https://web.archive.org/web/20110514024547/https://www.law.washington.edu/lta/swp/law/derivative.html/> (GPLv2, US law)
 
 [7] - <https://www.qt.io/licensing/open-source-lgpl-obligations> (LGPLv3)
+
+
+_Additional reading, not referred to in this article:_ \
+[Practical GPL[v2] Compliance](https://www.linuxfoundation.org/resources/publications/practical-gpl-compliance)
 
 ## What is License Compatibility?
 
