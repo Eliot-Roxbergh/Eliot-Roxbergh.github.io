@@ -181,7 +181,7 @@ To summarize; From a legal perspective, it is safer to use dynamic linking over 
 FSF describes that it is not allowed for a proprietary program to directly link (dynamically or statically) to a library licensed under GPL [1] (as described earlier, they need to communicate "at arms length"). 
 However, legal experts often claim that it is acceptable to dynamically link to a GPL work. Especially if the proprietary work is separate from the GPL work and does not depend on it.
 Ergo, the proprietary work should be able to utilize components other than the GPL-affected ones and still function (additionally, it should not be a derivative work of the GPL project). [2,4]
-Indeed, this is contrary to what the FSF writes [1]. Still, just because the FSF argues that the GPL should cover dynamic linking, does not necessarily make it so in practise [4]. From what I have read, dynamically linking GPL code is most often interpreted as to be allowed in US [2,6], English [4], and EU [3,5] law. While statically linking is often seen as not allowed or uncertain. According to one source, statically linking should be the same as including the code directly [4].
+Indeed, this is contrary to what the FSF writes [1]. Still, just because the FSF argues that the GPL should cover dynamic linking, does not necessarily make it so in practise [4]. From what I have read, dynamically linking GPL code is most often interpreted as to be allowed in US [2,5], English [4], and EU [3] law. While statically linking is often seen as not allowed or uncertain. According to one source, statically linking should be the same as including the code directly [4].
 
 ¹ _Dynamic linking is always safer than static linking, regardless if the license is (L)GPLv2 or v3._
 
@@ -193,8 +193,10 @@ This was also discussed in an LWN article, regarding a presentation by Armijn He
  This implies that (depending who you ask) declaring the wrong dependencies in a binary could trigger license compliance issues."_ [3]
 
 For an introduction to linking and GPL I refer to [4].
-And for another perspective, _"In short, the debate over static and dynamic linking simply misses the mark"_, see [6].
+And for another perspective, _"In short, the debate over static and dynamic linking simply misses the mark"_, see [5].
 
+Not law focused, Practical GPLv2 Compliance, (authored by Armijn Hemel et al.), \
+_<https://www.linuxfoundation.org/resources/publications/practical-gpl-compliance>_
 
 [1] - <https://www.gnu.org/licenses/gpl-faq.html#IfLibraryIsGPL> (included below)
 
@@ -203,19 +205,14 @@ And for another perspective, _"In short, the debate over static and dynamic link
 
 [2] - <http://mediatechlaw.mstreetlegal.com/2014/04/25/open-source-dynamic-linking-and-licensing-consideration-for-developers/> (GPLv3, US law)
 
-[3] - <https://lwn.net/Articles/548216/> (EU law?)
+[3] - <https://lwn.net/Articles/548216/> (≈EU law)
 
 [4] - <https://web.archive.org/web/20130514013222/https://moorcrofts.com/documents/GPL%20-%20the%20Linking%20Debate.pdf> (GPLV2, English law)
 
-[5] - <https://www.linuxfoundation.org/resources/publications/practical-gpl-compliance> (GPLv2, EU law?)
+[5] - <https://web.archive.org/web/20110514024547/https://www.law.washington.edu/lta/swp/law/derivative.html/> (GPLv2, US law)
 
-[6] - <https://web.archive.org/web/20110514024547/https://www.law.washington.edu/lta/swp/law/derivative.html/> (GPLv2, US law)
+[6] - <https://www.qt.io/licensing/open-source-lgpl-obligations> (LGPLv3)
 
-[7] - <https://www.qt.io/licensing/open-source-lgpl-obligations> (LGPLv3)
-
-
-_Additional reading, not referred to in this article:_ \
-[Practical GPL[v2] Compliance](https://www.linuxfoundation.org/resources/publications/practical-gpl-compliance)
 
 ## What is License Compatibility?
 
