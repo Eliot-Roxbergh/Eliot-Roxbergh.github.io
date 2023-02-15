@@ -106,7 +106,7 @@ Another question is to what extent an implicit patent clause has been tested in 
 For these reasons, some licenses provide an explicit patent clause to avoid depending on an implicit interpretation, as seen in GPLv3 and Apache.
 In these licenses, it is stated explicitly that the patent holder grants a patent license for use according to the terms of the license.²
 That being said, the implicit clause in e.g. GPLv2, still provides protection in many cases and jurisdictions [3].
-In a 2006 talk, Richard Stallman states that an explicit patent clause was added since the clause in GPLv2 was not sufficient in all countries and that _"[the explicit patent license in GPLv3] is pretty much the same as the implicit patent licence that US law gives people."_ [9]
+In a 2006 talk, Richard Stallman states that an explicit patent clause was added since the clause in GPLv2 was not sufficient in all countries and that _"[the explicit patent license in GPLv3] is pretty much the same as the implicit patent licence that US law gives people"_ [9].
 
 
 Regardless of patents, the work is still naturally covered by copyright, and its license may put additional restrictions thereon.
@@ -118,7 +118,7 @@ So by the nature of open source, someone could potentially extract and modify th
 
 Comment; This article discusses defenses regarding the implicit patent license of GPLv2: _<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
 
-¹ _I could not find any case testing the interpretation of GPLv2's implicit patent clause, but one would think such a case should exist, shedding some light on this question._
+¹ _There are not many court cases regarding GPLv2's implicit patent clause. For instance, there is a case from the US (XimpleWare/Versata 2013-2015) [10], but the situation is still not entirely clear._
 
 ² _More than that, GPLv3 states that a contributor authorizes use under this license for the contents of its "contributor version", referring to the whole GPL-licensed work. So just by distributing a GPLv3 work, the patent holder grants a patent license for the complete work (and not only for any modifications made) - specifically a "non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate  the contents of its contributor version." (from GPLv3 section 11)_. _Also mentioned here on slide 18 <https://www.ipa.go.jp/files/000028295.pdf> (Eben Moglen, GPL3: Process and Product, 21 December 2007)_.
 
@@ -184,6 +184,7 @@ furnished to do so"_ [2]
 
 [9] - <https://fsfe.org/activities/gplv3/tokyo-rms-transcript.en.html>
 
+[10] - HAAPANEN, Anna Kaarina. Free and Open Source Software and the Mystery of Software Patent Licenses Under the GPL. Journal of Open Law, Technology & Society, [S.l.], v. 7, n. 1, p. 19-28, dec. 2015. ISSN 2666-8106. Available at: <https://www.jolts.world/index.php/jolts/article/view/107>. Date accessed: 15 feb. 2023. 
 
 ## Remaining Questions
 
