@@ -141,7 +141,7 @@ For more information: the changes are briefly discussed here [5, 7], and in more
 Since any linking to or from a GPL-covered program would create a single combined work (according to the FSF), another license was also created: the Lesser GPL (LGPL).
 The LGPL allows for libraries to be used from works covered by other licenses (including proprietary works), while otherwise providing the same rights as the GPL.
 In the same way as the GPL, LGPL comes in two versions (v2.1 and v3) and some differences between them were mentioned in previous section.
-The LGPLv3 itself refers to the complete GPLv3 license, but adds a few exceptions when it comes to libraries and is therefore more lenient in these cases. LGPLv2.1 is a stand-alone license, but has the same spirit.
+The LGPLv3 itself refers to the complete GPLv3 license, but adds a few exceptions when it comes to libraries and is therefore more lenient in these cases. LGPLv2.1 is a stand-alone license, but shares the same spirit.
 
 
 According to the LGPL, to put it bluntly, your work gets contaminated by LGPL if it is _"based on the library"_, e.g., if your work directly includes LGPL code or if your work cannot function without the LGPL parts (either on its own or by replacing the LGPL work).
