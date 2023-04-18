@@ -14,14 +14,14 @@ _Eliot Roxbergh 2021-01-27_
 
 [1] - <https://copyleft.org/guide/>
 
-Addendum; I use the term _GPL contamination_, referring to situations where using a GPL work incorrectly would legally require you to release your work under the GPL license as well (or stop using GPL work in a fashion that is not allowed).
+Addendum: I use the term _GPL contamination_, referring to situations where using a GPL work incorrectly would legally require you to release your work under the GPL license as well (or stop using GPL work in a fashion that is not allowed).
 However, one could argue that GPL contamination is a too negative wording, as it only refers to the fact that if you use a GPL work beyond what is expressly allowed in the license, you are in breach of contract and could be held liable - but in this situation, you may instead license your work under the GPL and accept to be "contaminated".
 
 ## GPL According to the FSF
 
-Note; In the following paragraph, I try to summarize how the FSF (/the GNU Foundation) themselves interpret the GPL license. However, as I later mention in the section on [GPL Linking](#static-vs-dynamic-linking-gpl), most seem to argue that you can go further - for instance, to dynamically link against a GPL program, regardless how it is used, and still not be contamined.¹
+Note: In the following paragraph, I try to summarize how the FSF (/the GNU Foundation) themselves interpret the GPL license. However, as I later mention in the section on [GPL Linking](#static-vs-dynamic-linking-gpl), most seem to argue that you can go further - for instance, to dynamically link against a GPL program, regardless how it is used, and still not be contamined.¹
 
-To be sure that your work is not contaminated by the GPL, according to the FSF, the following should apply;
+To be sure that your work is not contaminated by the GPL, according to the FSF, the following should apply:
 The work should be an aggregate (as per the GPL license), meaning that it is separate and independent from the GPL licensed program.
 Therefore, the work should be able to function on its own, and any GPL components easily exchanged.
 The FSF states, that _"you cannot incorporate GPL-covered software in a proprietary system"_ [2] and that a proprietary work cannot link to a GPL work (_"because the program actually links to the library [..] the terms of the GPL apply to the entire combination"_) [9].
@@ -68,7 +68,7 @@ Side note, LGPLv3 incorporates the full GPLv3 license and is therefore equivalen
 
 [6] - <https://www.gnu.org/licenses/gpl-faq.html#InstInfo>
 
->   Specifically;
+>   Specifically:
 >
 > LGPLv2.1: "an executable [..] must include any data and utility programs needed for reproducing the executable from it"
                      - <https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>
@@ -97,7 +97,7 @@ https://opensource.stackexchange.com/questions/5447/to-which-extent-gpl-license-
 
 GPLv3 and LGPLv3 are generally stricter than GPLv2 and LGPLv2.1, respectively.
 
-The main differences between the versions are the following;
+The main differences between the versions are the following:
 
 1. The added tivoization clause states that if you distribute user products (i.e. actual hardware products), you need to allow modification of the work covered under (L)GPLv3 on these devices [1,2]. That is, the manufacturer is not allowed to restrict modification of (L)GPLv3 software running on their products, as otherwise often done with different DRM mechanisms [5,7].
 2. Unlike the predecessors, (L)GPLv3 provides an explicit clause that work distributed in a non-source format need to include installation instructions together with the source code. This is assumably stronger than LGPLv2.1 and GPLv2, which had a similar but much shorter mention of this. Although, I am not sure what this means in practice.
@@ -106,7 +106,7 @@ As a result of this, the Apache license should be compatible with GPLv3 (while i
 
 
 In general, the (L)GPLv3 license was also internationalized, avoiding US-specific terminology [5,8]. \
-For more information; the changes are briefly discussed here [5, 7], and in more detail here [8].
+For more information: the changes are briefly discussed here [5, 7], and in more detail here [8].
 
 ¹ _Together with the explicit mention of patents, so called patent retaliation is also included in GPLv3 [9] [10]._
 
@@ -146,12 +146,12 @@ In the same way as the GPL, LGPL comes in two versions (v2.1 and v3).
 Your work gets contaminated by LGPL if it is "based on the library", e.g., if your work directly includes LGPL code or if your work cannot function without the LGPL parts (either on its own or by replacing the LGPL work).
 However, the LGPL is referred to as weak copyleft since much can be accomplished while "combined" with non-copyleft code, which then falls under "works that use the library". [1]
 
-In this latter case, your work is not contaminated even if you link against an LGPL licensed library. The following applies;
+In this latter case, your work is not contaminated even if you link against an LGPL licensed library. The following applies:
 You may dynamically link against LGPL licensed libraries without disclosing your work. However, if you provide the LGPL library (dynamically linked), you need to provide its source.
 On the other hand, if you statically link, you also need to provide information to enable users to relink the software. This might, for instance, be the object files of your work. [2] Statically linking can easier be seen as "based on the library", and it is therefore safer to dynamically link when possible [3].
 
  
-Comment; Instead of licensing your work under the LGPL, it is also technically possible to license under the GPL while explicitly allowing linking (i.e. a _GPL linking exception_) [4]. An example of this is the so-called _Classpath exception_, as used in the GNU Classpath Java library [5].
+Comment: Instead of licensing your work under the LGPL, it is also technically possible to license under the GPL while explicitly allowing linking (i.e. a _GPL linking exception_) [4]. An example of this is the so-called _Classpath exception_, as used in the GNU Classpath Java library [5].
 However, by choosing GPL with the Classpath exception in favor of LGPL, you are forgoing the few requirements (described just above) that other works linking against your work have.
 
 [1] - <https://copyleft.org/guide/comprehensive-gpl-guidech11.html>
@@ -176,7 +176,7 @@ However, by choosing GPL with the Classpath exception in favor of LGPL, you are 
 
 In this section I use the term GPL for referring to both GPLv2 and GPLv3, as they should be similar when it comes to linking.
 
-To summarize; From a legal perspective, it is safer to use dynamic linking over static linking, as the risk of contamination is lower.¹ Dynamic linking is generally considered to be within the law according to legal experts, or at least, it should be allowed if it can be shown that the program in-fact functions and provides value even without the GPL work. Still, it is impossible to say conclusively without considering specific jurisdictions and for instance recent cases regarding GPL compliance.
+To summarize: From a legal perspective, it is safer to use dynamic linking over static linking, as the risk of contamination is lower.¹ Dynamic linking is generally considered to be within the law according to legal experts, or at least, it should be allowed if it can be shown that the program in-fact functions and provides value even without the GPL work. Still, it is impossible to say conclusively without considering specific jurisdictions and for instance recent cases regarding GPL compliance.
 
 FSF describes that it is not allowed for a proprietary program to directly link (dynamically or statically) to a library licensed under GPL [1] (as described earlier, they need to communicate "at arms length"). 
 However, legal experts often claim that it is acceptable to dynamically link to a GPL work. Especially if the proprietary work is separate from the GPL work and does not depend on it.
@@ -185,9 +185,9 @@ Indeed, this is contrary to what the FSF writes [1]. Still, just because the FSF
 
 ¹ _Dynamic linking is always safer than static linking, regardless if the license is (L)GPLv2 or v3._
 
-**Additional reading;**
+**Additional reading**
 
-This was also discussed in an LWN article, regarding a presentation by Armijn Hemel, which states; _"The key point is that the build-time and run-time environments may be different [...].
+This was also discussed in an LWN article, regarding a presentation by Armijn Hemel, which states: _"The key point is that the build-time and run-time environments may be different [...].
  This is important because, in his opinion, dynamic linking moves questions about derivative works and the application of the GPL license into run time, because it is only at run time that libraries are linked with a program.
  The dynamically linked libraries that are used at run time could indeed be different—and have different licenses—from the libraries that were specified during the static linking phase.
  This implies that (depending who you ask) declaring the wrong dependencies in a binary could trigger license compliance issues."_ [3]
@@ -226,7 +226,7 @@ GPLv3 (and a similar clause in GPLv2) states that _"you may not impose any furth
 Therefore, one needs to be careful when claiming a license is compatible with GPL, possibly even if the license is listed as compatible by the FSF [p. 160, 1].
 It is due to this clause, that GPLv3 code cannot be included in Apache projects, while the opposite (i.e. Apache code in GPLv3 projects) is allowed [4].
 
-Comment; GPLv2 and GPLv3 are not compatible. However, as it should be explicitly stated that _"GPL version 2 or any later version"_ can be used, the user or developer can decide which version to follow. As far as I understand, this has nothing to do with license compatibility but rather a type of multi-licensing.
+Comment: GPLv2 and GPLv3 are not compatible. However, as it should be explicitly stated that _"GPL version 2 or any later version"_ can be used, the user or developer can decide which version to follow. As far as I understand, this has nothing to do with license compatibility but rather a type of multi-licensing.
 
 #### License Compatibility - Example of Use:
 
