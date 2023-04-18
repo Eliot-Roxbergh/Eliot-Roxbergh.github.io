@@ -138,13 +138,14 @@ For more information: the changes are briefly discussed here [5, 7], and in more
 
 ## How is LGPL Weaker than GPL?
 
-The LGPL (Lesser GPL) allows for libraries covered by it to be more easily used, from works covered by other licenses.
-The LGPL(v3) itself refers to the compete GPL(v3) license, but adds a few exceptions when it comes to libraries and is therefore more lenient in these cases.
-In the same way as the GPL, LGPL comes in two versions (v2.1 and v3).
+Since any linking to or from a GPL-covered program would create a single combined work (according to the FSF), another license was also created: the Lesser GPL (LGPL).
+The LGPL allows for libraries to be used from works covered by other licenses (including proprietary works), while otherwise providing the same rights as the GPL.
+In the same way as the GPL, LGPL comes in two versions (v2.1 and v3) and some differences between them were mentioned in previous section.
+The LGPLv3 itself refers to the complete GPLv3 license, but adds a few exceptions when it comes to libraries and is therefore more lenient in these cases. LGPLv2.1 is a stand-alone license, but has the same spirit.
 
 
-Your work gets contaminated by LGPL if it is "based on the library", e.g., if your work directly includes LGPL code or if your work cannot function without the LGPL parts (either on its own or by replacing the LGPL work).
-However, the LGPL is referred to as weak copyleft since much can be accomplished while "combined" with non-copyleft code, which then falls under "works that use the library". [1]
+According to the LGPL, to put it bluntly, your work gets contaminated by LGPL if it is _"based on the library"_, e.g., if your work directly includes LGPL code or if your work cannot function without the LGPL parts (either on its own or by replacing the LGPL work).
+However, the LGPL is referred to as weak copyleft¹ since much can be accomplished while "combined" with non-copyleft code, which then falls under _"works that use the library"_. [1]
 
 In this latter case, your work is not contaminated even if you link against an LGPL licensed library. The following applies:
 You may dynamically link against LGPL licensed libraries without disclosing your work. However, if you provide the LGPL library (dynamically linked), you need to provide its source.
@@ -153,6 +154,8 @@ On the other hand, if you statically link, you also need to provide information 
  
 Comment: Instead of licensing your work under the LGPL, it is also technically possible to license under the GPL while explicitly allowing linking (i.e. a _GPL linking exception_) [4]. An example of this is the so-called _Classpath exception_, as used in the GNU Classpath Java library [5].
 However, by choosing GPL with the Classpath exception in favor of LGPL, you are forgoing the few requirements (described just above) that other works linking against your work have.
+
+¹ Copyleft refers to open-source licenses, such as the GPL, that require changes or extensions to the work to also be licensed under the original license (i.e. the license provides a "contamination" clause) [6]. 
 
 [1] - <https://copyleft.org/guide/comprehensive-gpl-guidech11.html>
 
@@ -171,6 +174,7 @@ However, by choosing GPL with the Classpath exception in favor of LGPL, you are 
 
 [5] - <https://resources.whitesourcesoftware.com/blog-whitesource/top-9-gpl-with-the-classpath-exception-questions-answered>
 
+[6] - <https://www.gnu.org/licenses/copyleft.en.html>
 
 ## Static vs. Dynamic Linking (GPL)
 
