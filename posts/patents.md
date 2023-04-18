@@ -22,7 +22,7 @@ To partially answer both these questions, I present two possible defenses explai
 In short, these reasons are patent exhaustion as well as the rights given in the software license.
 
 
-Comment regarding the EU;
+Comment regarding the EU:
 In the European Union, "programs for computers" are said to be not patentable, but in practice, certain software patents are both present and enforceable [1] (although seemingly more limited than in the US [2]).¹
 Still, the general ideas presented here apply.
 Ideas, such as, patent exhaustion as well as you cannot expect to sue your users for behavior that you clearly allow in the license (i.e. an implicit patent clause).
@@ -116,7 +116,7 @@ Otherwise, no patent rights are given, and the holder may choose to enforce the 
 Since an open-source license should allow for redistribution and modification, anyone could, in theory, then use, sell, and modify that patented code legally.
 So by the nature of open source, someone could potentially extract and modify the patented code and use it (i.e. the derivative work) themselves, without infringing on any patents held by the authors (or on the software license). Although from a patent viewpoint, this could in some ways be restricted depending on the interpretation of the patent license granted by the license, where an explicit patent clause could provide stronger rights.⁴
 
-Comment; This article discusses defenses regarding the implicit patent license of GPLv2: _<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
+Comment: This article discusses defenses regarding the implicit patent license of GPLv2: _<https://assets.fenwick.com/legacy/FenwickDocuments/potential_defenses.pdf>_
 
 ¹ _There are not many court cases regarding GPLv2's implicit patent clause. For instance, there is a case from the US (XimpleWare/Versata 2013-2015) [10], but the situation is still not entirely clear._
 
@@ -145,7 +145,7 @@ Regarding the explicit patent clause, GPLv3 states that every recipient is given
 #### Examples from the GPLv3, GPLv2, and MIT Licenses
 
 Here follows small excerpts from the main licenses mentioned earlier, as relevant for patent licenses.\
-In GPLv3 we have the explicit statement;\
+In GPLv3 we have an explicit statement;\
 _"Each contributor grants you a non-exclusive, worldwide, royalty-free patent license under the contributor's essential patent claims, to make, use, sell, offer for sale, import and otherwise run, modify and propagate the contents of its contributor version."_ [6]
 
 GPLv2 has an implicit statement (which does mention patents, but not specifically that users receive a patent license);\
