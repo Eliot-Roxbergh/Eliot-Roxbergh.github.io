@@ -142,20 +142,24 @@ Since any linking to or from a GPL-covered program would create a single combine
 The LGPL allows for libraries to be used from works covered by other licenses (including proprietary works), while otherwise providing the same rights as the GPL.
 In the same way as the GPL, LGPL comes in two versions (v2.1 and v3) and some differences between them were mentioned in previous section.
 The LGPLv3 itself refers to the complete GPLv3 license, but adds a few exceptions when it comes to libraries and is therefore more lenient in these cases. LGPLv2.1 is a stand-alone license, but shares the same spirit.
+Note that these terms are still regarding distribution of software (i.e. when you "convey the work"): not necessary for internal or personal use.
+
+According to the LGPL, to put it bluntly, your work gets contaminated by LGPL if it is what they call _"based on the library"¹_. That is, if your work directly includes LGPL code or if your work cannot function without the LGPL parts (either on its own or by replacing the LGPL work) it is _"based on the library"_; in other words, if your work and the LGPL work forms a combined work (except for linking as is explicitly allowed in LGPL).
+However, the LGPL is referred to as weak copyleft² since much can be accomplished while combined (linked) with another work, which then falls under _"works that use the library"_.³ [1]
+
+In the latter case, for _"works that use the library"_, your work is not contaminated even if you link against an LGPL licensed library. The following applies:
+You may dynamically link against LGPL licensed libraries without disclosing your work. However, if you provide the LGPL library (dynamically linked), you need to provide its source (as well as the license text, and build instructions).
+On the other hand, if you statically link, you also need to provide information to enable users to relink the software, including providing the object files (or source code) of your work (however it does not need to be under LGPL). [2] According to one source, statically linking can easier be seen as "based on the library", and that it is therefore safer to dynamically link [3].
 
 
-According to the LGPL, to put it bluntly, your work gets contaminated by LGPL if it is _"based on the library"_, e.g., if your work directly includes LGPL code or if your work cannot function without the LGPL parts (either on its own or by replacing the LGPL work).
-However, the LGPL is referred to as weak copyleft¹ since much can be accomplished while "combined" with non-copyleft code, which then falls under _"works that use the library"_. [1]
-
-In this latter case, your work is not contaminated even if you link against an LGPL licensed library. The following applies:
-You may dynamically link against LGPL licensed libraries without disclosing your work. However, if you provide the LGPL library (dynamically linked), you need to provide its source.
-On the other hand, if you statically link, you also need to provide information to enable users to relink the software. This might, for instance, be the object files of your work. [2] Statically linking can easier be seen as "based on the library", and it is therefore safer to dynamically link when possible [3].
-
- 
 Comment: Instead of licensing your work under the LGPL, it is also technically possible to license under the GPL while explicitly allowing linking (i.e. a _GPL linking exception_) [4]. An example of this is the so-called _Classpath exception_, as used in the GNU Classpath Java library [5].
 However, by choosing GPL with the Classpath exception in favor of LGPL, you are forgoing the few requirements (described just above) that other works linking against your work have.
 
-¹ Copyleft refers to open-source licenses, such as the GPL, that require changes or extensions to the work to also be licensed under the original license (i.e. the license provides a "contamination" clause) [6]. 
+¹ This terminology is specific to LGPLv2.1 but remains true also for LGPLv3.
+
+² Copyleft refers to open-source licenses, such as the GPL, that require changes or extensions to the work to also be licensed under the original license (i.e. the license provides a "contamination" clause) [6]. 
+
+³ TODO: LGPLv2.1 also has another clause (section 7) which discuss additional allowances for combining two libraries (one of which is "based on" the LGPLv2.1 library and the other is not) into one. Is this useful? What are some practical examples of this?
 
 [1] - <https://copyleft.org/guide/comprehensive-gpl-guidech11.html>
 
@@ -185,7 +189,7 @@ To summarize: From a legal perspective, it is safer to use dynamic linking over 
 FSF describes that it is not allowed for a proprietary program to directly link (dynamically or statically) to a library licensed under GPL [1] (as described earlier, they need to communicate "at arms length"). 
 However, legal experts often claim that it is acceptable to dynamically link to a GPL work. Especially if the proprietary work is separate from the GPL work and does not depend on it.
 Ergo, the proprietary work should be able to utilize components other than the GPL-affected ones and still function (additionally, it should not be a derivative work of the GPL project). [2,4]
-Indeed, this is contrary to what the FSF writes [1]. Still, just because the FSF argues that the GPL should cover dynamic linking, does not necessarily make it so in practise [4]. From what I have read, dynamically linking GPL code is most often interpreted as to be allowed in US [2,5], English [4], and EU [3] law. While statically linking is often seen as not allowed or uncertain. According to one source, statically linking should be the same as including the code directly [4].
+Indeed, this is contrary to what the FSF writes [1]. Still, just because the FSF argues that the GPL should cover dynamic linking, does not necessarily make it so in practise [4]. From what I have read, dynamically linking GPL code is most often interpreted as to be allowed: in US [2,5], English [4], and EU [3] law. While statically linking is often seen as not allowed or uncertain. According to one source, statically linking should be the same as including the code directly [4].
 
 ¹ _Dynamic linking is always safer than static linking, regardless if the license is (L)GPLv2 or v3._
 
