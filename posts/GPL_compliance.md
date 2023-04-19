@@ -151,6 +151,9 @@ In the latter case, for _"works that use the library"_, your work is not contami
 You may dynamically link against LGPL licensed libraries without disclosing your work. However, if you provide the LGPL library (dynamically linked), you need to provide its source (as well as the license text, and build instructions).
 On the other hand, if you statically link, you also need to provide information to enable users to relink the software, including providing the object files (or source code) of your work (however it does not need to be under LGPL). [2] According to one source, statically linking can easier be seen as "based on the library", and that it is therefore safer to dynamically link [3].
 
+Comment: My understanding is that GPLv2.1 is in general more allowing (or vague) than v3; In v3, more terms are strictly defined (mainly _"Application"_ and _"Combined Work"_) whereas in v2.1 they are not and instead up to interpretation. Therefore you could make the argument that, for instance, linking _from_ a LGPLv3 library _to_ a proprietary work is NOT allowed, as only an "Application" is granted those rights [7]: an Application is defined in LGPLv3 as _"any work that makes use of an interface provided by the Library, but which is not otherwise based on the Library"_.
+However, from my reading of LGPLv2.1 the situation is different.
+That is, it could be acceptable to link _from_ a LGPLv2.1 library _to_ a proprietary work, as long as the following definition in LGPLv2.1 applies: (_"work that uses the library"_ is described as) it _"must be combined with the library in order to run"_ and it is _"A program that contains no derivative of any portion of the Library, but is designed to work with the Library by being compiled or linked with it"_. Note, these are only my personal oberservations from reading both licenses.
 
 Comment: Instead of licensing your work under the LGPL, it is also technically possible to license under the GPL while explicitly allowing linking (i.e. a _GPL linking exception_) [4]. An example of this is the so-called _Classpath exception_, as used in the GNU Classpath Java library [5].
 However, by choosing GPL with the Classpath exception in favor of LGPL, you are forgoing the few requirements (described just above) that other works linking against your work have.
@@ -159,7 +162,7 @@ However, by choosing GPL with the Classpath exception in favor of LGPL, you are 
 
 ² Copyleft refers to open-source licenses, such as the GPL, that require changes or extensions to the work to also be licensed under the original license (i.e. the license provides a "contamination" clause) [6]. 
 
-³ TODO: LGPLv2.1 also has another clause (section 7) which discuss additional allowances for combining two libraries (one of which is "based on" the LGPLv2.1 library and the other is not) into one. Is this useful? What are some practical examples of this?
+³ TODO: LGPL also has another clause (v2.1: section 7; v3: section 5) which discuss additional allowances for combining two libraries (one of which is "based on" the LGPLv2.1 library and the other is not) into one. Is this useful? What are some practical examples of this?
 
 [1] - <https://copyleft.org/guide/comprehensive-gpl-guidech11.html>
 
@@ -179,6 +182,9 @@ However, by choosing GPL with the Classpath exception in favor of LGPL, you are 
 [5] - <https://resources.whitesourcesoftware.com/blog-whitesource/top-9-gpl-with-the-classpath-exception-questions-answered>
 
 [6] - <https://www.gnu.org/licenses/copyleft.en.html>
+
+[7] - Discussed here: <https://opensource.stackexchange.com/questions/9274/what-permissions-does-lgpl-3-0-grant-if-the-licensed-work-links-against-a-propri> \
+Tangentially relevant: https://www.gnu.org/licenses/gpl-faq.en.html#GPLIncompatibleLibs
 
 ## Static vs. Dynamic Linking (GPL)
 
