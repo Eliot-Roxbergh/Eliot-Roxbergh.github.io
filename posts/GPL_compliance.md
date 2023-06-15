@@ -188,7 +188,7 @@ However, by choosing GPL with the Classpath exception in favor of LGPL, you are 
 [6] - <https://www.gnu.org/licenses/copyleft.en.html>
 
 [7] - Discussed here: <https://opensource.stackexchange.com/questions/9274/what-permissions-does-lgpl-3-0-grant-if-the-licensed-work-links-against-a-propri> \
-Tangentially relevant: https://www.gnu.org/licenses/gpl-faq.en.html#GPLIncompatibleLibs
+Tangentially relevant: <https://www.gnu.org/licenses/gpl-faq.en.html#GPLIncompatibleLibs>
 
 ## Static vs. Dynamic Linking (GPL)
 
