@@ -1,8 +1,5 @@
 ## Notes and Shorter Guides
 
-**Secure Coding in C and C++** (book summary and notes on C programming) \
-TODO skim through and make public
-
 **Notes** (on how to use GDB, vim (cscope), ... but see Portknock exercise for example setup) \
 <https://github.com/Eliot-Roxbergh/examples/tree/master/c_programming/development_tips>
 
@@ -17,6 +14,4 @@ or <https://exercism.org/tracks/c/exercises/react/solutions/eliot>
 <https://github.com/Eliot-Roxbergh/examples/tree/master/c_programming/examples>
 
 # TODO
-Sync files such as GCC Flags, add C book summary, and this text with links \
- \
-Clean "Minor C code examples"
+Sync files such as GCC Flags, and this text with links
