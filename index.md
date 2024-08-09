@@ -3,6 +3,9 @@
 {% include_relative posts/intro.md %}
 
 ---
+{% include_relative posts/2024_oscp.md %}
+
+---
 {% include_relative posts/projects_2023.md %}
 
 ---
