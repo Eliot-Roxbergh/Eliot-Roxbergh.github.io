@@ -1,30 +1,41 @@
-# Inbyggd frihets TKey-hackathon
+# Inbyggd-Frihets TKey hackathon
 
-Saturday the 25th October,
-Inbyggd-Frihet will organize a TKey hackathon at Assured's office in Gothenburg.
+**Saturday the 25th October,
+Inbyggd-Frihet will organize a TKey hackathon at Assured's office in Gothenburg.**
 
 The Tillitis TKey is an open-source software, and open-source hardware, USB security token made in Sweden.
 It is capable of providing an extra layer of security for use cases such as cryptographic signing, (SSH, PAM, etc.) login, and random number generation.
 For more information about the TKey see below.
 
-The goal of the hackathon will be to collaborate on improving the TKey software and to work on finding, and implementing, more use cases for the TKey.
-This is not a competitive hackathon, instead our aim is to get started with, and to improve, the TKey together with others, have fun and share ideas.
+The goal of this hackathon is to collaborate on improving the TKey software and to work on finding, and implementing, more use cases for the TKey.
+This is not a competitive hackathon, instead our aim is to get started with, and to improve, the TKey together with others - have fun and share ideas.
 
-If you already know something that you want to implement, you can include it with your registration.
+If you already know something that you want to implement or test, you can include it with your registration.
 At the start of the event, these ideas will be presented, and people may freely choose an idea that they find interesting, and collaborate on for the day.
+
+Our friends from Tillitis will join the event, and are able to answer questions.
 
 **Prerequisites:** \
 Bring a laptop if you wish to partake in the hackathon.
 
 **Schedule:** \
-12:00 Doors open \
-13:00 TALK: Introduction \
-13:10 TALK: Getting started with TKey and the emulator\
-13:30 TALK: Introduction round and presentation of hackathon ideas.\
-14:00 HACK: Join a group and start hacking\
-17:00-18:00: Food\
-20:00: Present your achievements\
-21:00: End of event
+**12:00 - Doors open** \
+**13:00** [TALK] - Introduction \
+**13:10** [TALK] - Getting started with TKey and the emulator\
+**13:30** [TALK] - Introduction round and presentation of hackathon ideas.\
+**14:00** [HACK] - Join a group and start hacking\
+**17:00** [FOOD] \
+**18:00** [HACK] - Hacking\
+**20:00** [TALK] - Present your achievements\
+**21:00 - End of event**
+
+**Location:** \
+Assured AB \
+Norra Allégatan 7, 413 30 Göteborg \
+Top floor \
+https://www.openstreetmap.org/node/12787669002#map=19/57.700238/11.956451
+
+**40 spots: first come, first served**
 
 
 ## Further reading
@@ -50,5 +61,5 @@ https://shop.tillitis.se/
 https://www.assured.se/posts/getting-started-tillitis-tkey-security-token
 - For Windows, introduction to use cases: \
 https://www.assured.se/posts/sign-git-commits-tillitis-tkey-security-token
-- Inbyggd Frihet Göteborg \
+- Inbyggd-Frihet Göteborg \
  <https://inbyggd-frihet.org>
