@@ -54,9 +54,10 @@ _See [the Tillitis developer documentation](https://dev.tillitis.se) for more te
 
 _Tillitis provides a few applications, but it is also possible to write apps for the TKey using regular C (Tillitis provides a limited standard lib)._
 
-![TKey](tillitis-tkey.avif "The TKey in action")
+[<img src="tillitis-tkey.avif" width="480" />](.)
 
-_Text and image source: <https://www.assured.se/posts/getting-started-tillitis-tkey-security-token#anyway-whats-a-tkey>_
+_Source: <https://www.assured.se/posts/getting-started-tillitis-tkey-security-token#anyway-whats-a-tkey>_
+
 
 ### Links
 
