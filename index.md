@@ -1,5 +1,8 @@
 
 ---
+{% include_relative posts/2025_tkey_meetup.md %}
+
+---
 {% include_relative posts/intro.md %}
 
 ---
