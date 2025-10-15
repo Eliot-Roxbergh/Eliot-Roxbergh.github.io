@@ -35,8 +35,12 @@ Norra Allégatan 7, 413 30 Göteborg \
 Top floor \
 <https://www.openstreetmap.org/node/12787669002#map=19/57.700238/11.956451>
 
-**40 spots: first come, first served**
+## Registration
 
+**Register by sending an email to: <inbyggd-frihet@r0x.se>** \
+**Or, use this form: <https://forms.gle/1J851XTAcp38trH89>**
+
+40 spots: first come, first served
 
 ## Further reading
 
