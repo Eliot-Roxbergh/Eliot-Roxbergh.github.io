@@ -38,9 +38,12 @@ Top floor \
 ## Registration
 
 **Register by sending an email to: <inbyggd-frihet@r0x.se>** \
-**Or, use this form: <https://forms.gle/1J851XTAcp38trH89>**
-
+**Or, use this form: <https://forms.gle/1J851XTAcp38trH89>** \
 40 spots: first come, first served
+
+Hackathon topics are listed here, feel free to add new ideas: <https://pad.sigsum.org/p/NeceR1bXHk5Mhe1JTXJC>
+
+
 
 ## Further reading
 
